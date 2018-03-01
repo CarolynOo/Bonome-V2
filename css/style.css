@@ -1,4 +1,49 @@
-/* line 1, ../sass/style.scss */
-h1 {
-  color: blue;
-}
+/*
+Error: Invalid CSS after "@import "compass"": expected "{", was ";"
+        on line 4 of /home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss
+
+1: 
+2: === IMPORTS ===
+3: 
+4: @import "compass";
+5: 
+6: 
+7: /*
+8: * === RESET === 
+9: *\/
+
+Backtrace:
+/home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss:4
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1115:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1110:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:654:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:647:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:663:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:278:in `render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:17:in `block in render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:16:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/config.rb:23:in `call'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import \"compass\"\": expected \"{\", was \";\"\A         on line 4 of /home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss\A \A 1: \A 2: === IMPORTS ===\A 3: \A 4: @import \"compass\";\A 5: \A 6: \A 7: /*\A 8: * === RESET === \A 9: */"; }

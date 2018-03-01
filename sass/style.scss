@@ -1,3 +1,213 @@
-h1{
-	color:blue;
+
+=== IMPORTS ===
+
+@import "compass";
+
+
+/*
+* === RESET === 
+*/
+/*@import "compass/reset";*/
+
+/*
+* === VARIABLES ===
+*/
+
+/*
+* — colors —
+#ec5946;
+#fcccdc;
+#7673d4;
+#f5eeb8;
+#181c52;
+#ffffff;
+#4cd137;
+#44bd32;
+#2ecc71;
+#27ae60;
+
+
+*/
+
+/*
+* === GLOBAL RULES ===
+*/
+
+
+// CSS GRID
+
+.container{
+  display: grid | inline-grid	
 }
+
+
+// global container class
+
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0 auto;
+	font-family: 'Open Sans', serif;
+	font-weight: lighter;
+	line-height: 1.5em;
+	color: #181c52;
+	background-color: #f5eeb8;
+	overflow: scroll;
+
+}
+
+// links
+a{
+	text-decoration: none;
+	padding-right: 30px;
+}
+
+/* unvisited link */
+a:link {
+	color: #fff;
+}
+
+/* visited link */
+a:visited {
+	color: #44bd32;
+}
+
+/* mouse over link */
+a:hover {
+	color: #fff;
+}
+
+/* selected link */
+a:active {
+	color: yellow;
+}
+
+
+
+
+
+
+
+/* titles */
+
+
+	h2{
+
+		font-size: 2em;
+		font-family: 'Press Start 2P', cursive;
+		font-weight:  lighter;
+		padding: 10px;
+		color:#44bd32;
+
+	}
+
+/*
+* === HOME ===
+*/
+.home{
+	
+    height: 100vh;
+    width: 100vw;
+    
+
+	&__nav{
+
+		display:flex;
+		justify-content: space-between;
+		background-color: #ec5946;
+		padding: 40px;
+
+	}
+
+	
+	&__inner{
+		display:flex;
+		justify-content: space-between;
+		background-color:#ffffff;
+		
+
+	}
+}
+
+/*
+* === PRESENTATION ===
+*/
+
+.presentation{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*
+* === PRESENTATION BONOME ===
+*/
+
+.presentation{
+	
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+/*
+* === COMPETENCES ===
+*/
+
+.skills{
+	
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*
+* ===  FORMULAIRE ===
+*/
+
+.contact{
+	height: 100vh;
+    width: 100vw;
+
+
+.signup__form{
+
+	
+	background-color: #7673d4;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px auto;
+	justify-content: center;
+	width: 30%;
+
+	input{
+
+		width: auto;
+		padding: 12px 20px;
+		margin: 8px 0;
+		//box-sizing: border-box;
+
+	}
+
+}
+}
+
+
+
+
+/*
+* === Carrousel ===
+*/
+
+
+
+/*
+* === FOOTER ===
+*/ 
+
