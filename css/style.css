@@ -1,49 +1,246 @@
+@charset "UTF-8";
+/*=== IMPORTS ===*/
 /*
-Error: Invalid CSS after "@import "compass"": expected "{", was ";"
-        on line 4 of /home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss
-
-1: 
-2: === IMPORTS ===
-3: 
-4: @import "compass";
-5: 
-6: 
-7: /*
-8: * === RESET === 
-9: *\/
-
-Backtrace:
-/home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss:4
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1115:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1110:in `tok!'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:654:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:647:in `ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:663:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:278:in `render'
-/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:17:in `block in render'
-/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:29:in `with_import_scope'
-/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:16:in `render'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:471:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/config.rb:23:in `call'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6:in `block in add'
+* === RESET === 
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \"compass\"\": expected \"{\", was \";\"\A         on line 4 of /home/simplon/public_html/chefdoeuvre/bonome/sass/style.scss\A \A 1: \A 2: === IMPORTS ===\A 3: \A 4: @import \"compass\";\A 5: \A 6: \A 7: /*\A 8: * === RESET === \A 9: */"; }
+/*@import "compass/reset";*/
+/*
+* === VARIABLES ===
+*/
+/*
+* — colors —
+#ec5946;
+#fcccdc;
+#7673d4;
+#f5eeb8;
+#181c52;
+#ffffff;
+#4cd137;
+#44bd32;
+#2ecc71;
+#27ae60;
+
+
+*/
+/*
+* === GLOBAL RULES ===
+*/
+/* line 42, ../sass/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 46, ../sass/style.scss */
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', serif;
+  font-weight: lighter;
+  line-height: 1.5em;
+  color: #181c52;
+  background-color: #f5eeb8;
+  overflow: scroll; }
+
+/* line 58, ../sass/style.scss */
+a {
+  text-decoration: none;
+  padding-right: 30px; }
+
+/* unvisited link */
+/* line 64, ../sass/style.scss */
+a:link {
+  color: #fff; }
+
+/* visited link */
+/* line 69, ../sass/style.scss */
+a:visited {
+  color: #44bd32; }
+
+/* mouse over link */
+/* line 74, ../sass/style.scss */
+a:hover {
+  color: #fff; }
+
+/* selected link */
+/* line 79, ../sass/style.scss */
+a:active {
+  color: yellow; }
+
+/*images*/
+/* line 86, ../sass/style.scss */
+.image {
+  background-size: cover;
+  width: 800px;
+  height: 600px; }
+
+/* titles */
+/* line 97, ../sass/style.scss */
+h2 {
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: lighter;
+  padding: 10px;
+  color: #44bd32; }
+
+/*
+* === HOME ===
+*/
+/* line 110, ../sass/style.scss */
+.home {
+  height: 100vh;
+  width: 100vw; }
+  /* line 116, ../sass/style.scss */
+  .home__nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ec5946;
+    padding: 40px; }
+  /* line 126, ../sass/style.scss */
+  .home__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff; }
+
+/*
+* === PRESENTATION ===
+*/
+/* line 139, ../sass/style.scss */
+.presentation {
+  height: 100vh;
+  width: 100vw; }
+
+/*
+* === PRESENTATION BONOME ===
+*/
+/* line 150, ../sass/style.scss */
+.presentation {
+  height: 100vh;
+  width: 100vw; }
+
+/*
+* === COMPETENCES ===
+*/
+/* line 161, ../sass/style.scss */
+.skills {
+  height: 100vh;
+  width: 100vw; }
+
+/*
+* ===  FORMULAIRE ===
+*/
+/* line 172, ../sass/style.scss */
+.contact {
+  height: 100vh;
+  width: 100vw; }
+  /* line 177, ../sass/style.scss */
+  .contact .signup__form {
+    background-color: #7673d4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: center;
+    width: 30%; }
+    /* line 189, ../sass/style.scss */
+    .contact .signup__form input {
+      width: auto;
+      padding: 12px 20px;
+      margin: 8px 0; }
+
+/*
+* === Carrousel ===
+*/
+/* line 208, ../sass/style.scss */
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* line 214, ../sass/style.scss */
+.carousel {
+  display: flex;
+  left: -100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(100%); }
+
+@media (min-width: 30em) {
+  /* line 225, ../sass/style.scss */
+  .carousel {
+    left: -50%;
+    transform: translateX(50%); } }
+@media (min-width: 40em) {
+  /* line 232, ../sass/style.scss */
+  .carousel {
+    left: -33.33333%;
+    transform: translateX(33.33333%); } }
+/* line 238, ../sass/style.scss */
+.carousel.is-reversing {
+  transform: translateX(-100%); }
+
+@media (min-width: 30em) {
+  /* line 243, ../sass/style.scss */
+  .carousel.is-reversing {
+    transform: translateX(-50%); } }
+@media (min-width: 40em) {
+  /* line 249, ../sass/style.scss */
+  .carousel.is-reversing {
+    transform: translateX(-33.33333%); } }
+/* line 254, ../sass/style.scss */
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s ease-in-out; }
+
+/* line 259, ../sass/style.scss */
+.carousel-seat {
+  background: transparent;
+  flex: 1 0 100%;
+  order: 2; }
+
+/* line 265, ../sass/style.scss */
+.carousel-seat:nth-child(even) {
+  background: transparent; }
+
+@media (min-width: 30em) {
+  /* line 270, ../sass/style.scss */
+  .carousel-seat {
+    flex-basis: 50%; } }
+@media (min-width: 40em) {
+  /* line 276, ../sass/style.scss */
+  .carousel-seat {
+    flex-basis: 33.33333%; } }
+/* line 281, ../sass/style.scss */
+.carousel-seat.is-ref {
+  order: 1; }
+
+/* line 285, ../sass/style.scss */
+.container img {
+  width: 800px;
+  height: auto;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.6em 0;
+  text-align: center; }
+
+/* line 294, ../sass/style.scss */
+.controls {
+  padding: 1em;
+  text-align: center; }
+
+/* line 299, ../sass/style.scss */
+.controls button {
+  background: #aaa;
+  border: 0;
+  border-radius: 0.25em;
+  color: #eee;
+  padding: 0.5em 1em; }
+
+/* line 307, ../sass/style.scss */
+.controls button:hover,
+.controls button:focus {
+  background: orange; }
+
+/*
+* === FOOTER ===
+*/

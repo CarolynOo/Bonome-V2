@@ -1,0 +1,753 @@
+/* line 5, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 7, ../sass/styleshop.scss */
+.wrap {
+  width: 980px;
+  margin: 0 auto; }
+
+/* line 12, ../sass/styleshop.scss */
+#header {
+  background: url("img/bg-header.png") repeat;
+  height: 72px; }
+  /* line 15, ../sass/styleshop.scss */
+  #header div.menu {
+    background: url("img/bg-header-menu.png") no-repeat;
+    height: 72px;
+    line-height: 72px; }
+    /* line 19, ../sass/styleshop.scss */
+    #header div.menu a.logo {
+      width: 98px;
+      display: block;
+      font-family: 'AllerRegular';
+      font-size: 24px;
+      color: #567;
+      text-decoration: none;
+      text-align: center;
+      float: left;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8); }
+    /* line 30, ../sass/styleshop.scss */
+    #header div.menu h1 {
+      font-family: 'AllerLightRegular';
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+      font-weight: 300;
+      padding-left: 20px;
+      float: left;
+      width: 200px;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8); }
+    /* line 42, ../sass/styleshop.scss */
+    #header div.menu ul.panier {
+      float: left;
+      width: 261px;
+      margin-left: 397px; }
+      /* line 46, ../sass/styleshop.scss */
+      #header div.menu ul.panier li.caddie {
+        float: left; }
+      /* line 49, ../sass/styleshop.scss */
+      #header div.menu ul.panier li.caddie a {
+        background: url("img/caddie.png") no-repeat;
+        width: 31px;
+        height: 27px;
+        display: block;
+        text-indent: -9898px;
+        line-height: 72px;
+        margin-top: 20px;
+        margin-left: 18px; }
+      /* line 59, ../sass/styleshop.scss */
+      #header div.menu ul.panier li.items {
+        float: left;
+        height: 72px;
+        line-height: 30px;
+        margin-left: 12px;
+        font-family: 'Helvetica';
+        font-size: 16px;
+        color: #aad56b;
+        text-align: center;
+        width: 65px;
+        display: block;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+        /* line 72, ../sass/styleshop.scss */
+        #header div.menu ul.panier li.items span {
+          display: block;
+          margin-top: 5px;
+          font-size: 18px;
+          color: #FFF;
+          font-weight: bold;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+      /* line 82, ../sass/styleshop.scss */
+      #header div.menu ul.panier li.total {
+        float: left;
+        height: 72px;
+        line-height: 30px;
+        margin-left: 12px;
+        font-family: 'Helvetica';
+        font-size: 18px;
+        color: #aad56b;
+        text-align: center;
+        width: 110px;
+        display: block;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+        /* line 95, ../sass/styleshop.scss */
+        #header div.menu ul.panier li.total > span {
+          display: block;
+          margin-top: 5px;
+          font-size: 18px;
+          color: #FFF;
+          font-weight: bold;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+
+/* line 109, ../sass/styleshop.scss */
+#subheader {
+  background: url("img/bg-subheader.png") repeat;
+  height: 45px; }
+  /* line 113, ../sass/styleshop.scss */
+  #subheader div.wrap h2 {
+    font-family: 'AllerRegular';
+    font-size: 12px;
+    color: #FFF;
+    line-height: 45px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+    /* line 120, ../sass/styleshop.scss */
+    #subheader div.wrap h2 a {
+      color: #99cd4e;
+      text-decoration: none; }
+
+/* line 129, ../sass/styleshop.scss */
+#menu {
+  background: #FFF;
+  height: 38px;
+  padding-top: 25px; }
+  /* line 133, ../sass/styleshop.scss */
+  #menu li {
+    float: left;
+    text-decoration: none;
+    margin-right: 35px; }
+    /* line 137, ../sass/styleshop.scss */
+    #menu li a {
+      font-family: 'AllerBold';
+      font-size: 14px;
+      color: #4d5662;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8); }
+    /* line 144, ../sass/styleshop.scss */
+    #menu li a:hover {
+      color: #ec8a64; }
+
+/* line 149, ../sass/styleshop.scss */
+#ariane {
+  background: #FFF;
+  font-family: 'AllerLightRegular';
+  font-size: 18px;
+  color: #919aa8;
+  padding-bottom: 15px; }
+  /* line 155, ../sass/styleshop.scss */
+  #ariane a {
+    color: #323b49; }
+
+/*
+HOME
+*/
+/* line 162, ../sass/styleshop.scss */
+.home {
+  background: #f9f9f9; }
+  /* line 164, ../sass/styleshop.scss */
+  .home .row.last {
+    border-top: 0 none; }
+  /* line 167, ../sass/styleshop.scss */
+  .home .row {
+    border-top: 1px solid #e5e6e7;
+    border-bottom: 1px solid #e5e6e7;
+    height: 410px; }
+    /* line 171, ../sass/styleshop.scss */
+    .home .row .box.last {
+      border-right: 1px solid #e5e6e7; }
+    /* line 174, ../sass/styleshop.scss */
+    .home .row .box {
+      width: 300px;
+      height: 380px;
+      border-left: 1px solid #e5e6e7;
+      padding-top: 30px;
+      padding-left: 25px;
+      float: left; }
+      /* line 181, ../sass/styleshop.scss */
+      .home .row .box .product:hover {
+        -moz-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2); }
+      /* line 184, ../sass/styleshop.scss */
+      .home .row .box .product {
+        background: url("img/boxfull.png") no-repeat;
+        width: 263px;
+        height: 340px;
+        position: relative;
+        -moz-transition-property: background;
+        -o-transition-property: background;
+        -webkit-transition-property: background;
+        transition-property: background;
+        -moz-transition-duration: 2s;
+        -o-transition-duration: 2s;
+        -webkit-transition-duration: 2s;
+        transition-duration: 2s;
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s; }
+        /* line 193, ../sass/styleshop.scss */
+        .home .row .box .product a img {
+          margin-left: 1px;
+          margin-top: 1px; }
+        /* line 197, ../sass/styleshop.scss */
+        .home .row .box .product .description {
+          font-family: 'AllerLightRegular';
+          font-size: 16px;
+          color: #39414d;
+          font-style: italic;
+          text-align: center;
+          padding-top: 8px;
+          text-shadow: 1px 1px 1px white; }
+          /* line 206, ../sass/styleshop.scss */
+          .home .row .box .product .description strong {
+            font-family: 'AllerRegular';
+            font-style: normal; }
+          /* line 210, ../sass/styleshop.scss */
+          .home .row .box .product .description a.price {
+            font-family: 'Helvetica';
+            font-size: 18px;
+            color: #74bc0e;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none; }
+        /* line 219, ../sass/styleshop.scss */
+        .home .row .box .product a.gift {
+          background: url("img/gift.png") no-repeat;
+          display: block;
+          width: 17px;
+          height: 17px;
+          text-indent: -9898px;
+          position: absolute;
+          bottom: 14px;
+          left: 15px; }
+        /* line 227, ../sass/styleshop.scss */
+        .home .row .box .product .rating {
+          position: absolute;
+          bottom: 7px;
+          left: 65px; }
+          /* line 230, ../sass/styleshop.scss */
+          .home .row .box .product .rating span {
+            font-family: 'Helvetica';
+            font-size: 13px;
+            color: #39414d;
+            font-weight: 300;
+            display: block;
+            width: 48px;
+            height: 20px;
+            float: left; }
+          /* line 239, ../sass/styleshop.scss */
+          .home .row .box .product .rating ul {
+            float: left;
+            display: block;
+            width: 115px; }
+            /* line 243, ../sass/styleshop.scss */
+            .home .row .box .product .rating ul li {
+              float: left;
+              margin-right: 2px; }
+              /* line 246, ../sass/styleshop.scss */
+              .home .row .box .product .rating ul li a {
+                background: url("img/rating.png") no-repeat;
+                width: 15px;
+                height: 15px;
+                display: block;
+                text-indent: -9898px;
+                background-position: 0 0; }
+              /* line 252, ../sass/styleshop.scss */
+              .home .row .box .product .rating ul li a:hover, .home .row .box .product .rating ul li a.off {
+                background: url("img/rating.png") no-repeat;
+                width: 15px;
+                height: 15px;
+                display: block;
+                text-indent: -9898px;
+                background-position: -15px 0; }
+        /* line 261, ../sass/styleshop.scss */
+        .home .row .box .product .add {
+          background: url("img/sprites.png") no-repeat;
+          background-position: 0 0;
+          width: 43px;
+          height: 44px;
+          display: block;
+          text-indent: -9898px;
+          position: absolute;
+          bottom: 25px;
+          right: -13px;
+          -webkit-transition: opacity 0.2s ease-in; }
+        /* line 272, ../sass/styleshop.scss */
+        .home .row .box .product .add:hover {
+          background: url("img/sprites.png") no-repeat;
+          background-position: 0 0;
+          width: 43px;
+          height: 44px;
+          display: block;
+          text-indent: -9898px;
+          position: absolute;
+          bottom: 25px;
+          right: -13px;
+          opacity: 0.7;
+          -moz-opacity: 0.7;
+          filter: alpha(opacity=7); }
+        /* line 285, ../sass/styleshop.scss */
+        .home .row .box .product .valid {
+          background: url("img/sprites.png") no-repeat;
+          background-position: 0 -45px;
+          width: 43px;
+          height: 44px;
+          display: block;
+          text-indent: -9898px;
+          position: absolute;
+          bottom: 25px;
+          right: -13px;
+          -webkit-transition: opacity 0.2s ease-in; }
+        /* line 296, ../sass/styleshop.scss */
+        .home .row .box .product .valid:hover {
+          background: url("img/sprites.png") no-repeat;
+          background-position: 0 -90px;
+          width: 43px;
+          height: 44px;
+          display: block;
+          text-indent: -9898px;
+          position: absolute;
+          bottom: 25px;
+          right: -13px;
+          opacity: 0.9;
+          -moz-opacity: 0.9;
+          filter: alpha(opacity=9); }
+
+/*
+REGISTER
+*/
+/* line 323, ../sass/styleshop.scss */
+.register .title {
+  background: #F9F9F9;
+  height: 80px;
+  border-top: 1px solid #e5e6e7;
+  border-bottom: 1px solid #e5e6e7; }
+  /* line 328, ../sass/styleshop.scss */
+  .register .title h2 {
+    height: 80px;
+    line-height: 80px;
+    font-family: 'AllerRegular';
+    font-size: 30px;
+    color: #323b49;
+    width: 464px;
+    float: left;
+    padding-left: 51px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8); }
+  /* line 340, ../sass/styleshop.scss */
+  .register .title h2.first {
+    border-right: 1px solid #e5e6e7;
+    padding-left: 0px; }
+/* line 346, ../sass/styleshop.scss */
+.register .bloc {
+  background: #FFF;
+  height: 458px;
+  border-bottom: 1px solid #e5e6e7; }
+  /* line 350, ../sass/styleshop.scss */
+  .register .bloc .customer {
+    width: 464px;
+    float: left;
+    border-right: 1px solid #e5e6e7;
+    height: 458px; }
+    /* line 355, ../sass/styleshop.scss */
+    .register .bloc .customer h3 {
+      font-family: 'AllerRegular';
+      font-size: 13px;
+      line-height: 22px;
+      color: #323b49;
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid #e5e6e7;
+      width: 420px; }
+    /* line 366, ../sass/styleshop.scss */
+    .register .bloc .customer form {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e5e6e7;
+      width: 420px; }
+      /* line 371, ../sass/styleshop.scss */
+      .register .bloc .customer form .input {
+        padding: 10px 0 10px 0; }
+        /* line 373, ../sass/styleshop.scss */
+        .register .bloc .customer form .input label {
+          font-family: 'AllerLightRegular';
+          font-size: 12px;
+          line-height: 22px;
+          color: #323b49;
+          display: block; }
+        /* line 380, ../sass/styleshop.scss */
+        .register .bloc .customer form .input input {
+          height: 33px;
+          width: 200px;
+          border: 1px solid #c3c3c3;
+          background: #f9f9f9; }
+      /* line 388, ../sass/styleshop.scss */
+      .register .bloc .customer form .submit input {
+        background: url("img/submit.png") no-repeat;
+        background-position: 0 0;
+        width: 142px;
+        height: 39px;
+        border: 0 none;
+        color: #FFF;
+        font-family: 'AllerRegular';
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+      /* line 399, ../sass/styleshop.scss */
+      .register .bloc .customer form .submit input:hover {
+        background: url("img/submit.png") no-repeat;
+        background-position: 0 -42px; }
+  /* line 408, ../sass/styleshop.scss */
+  .register .bloc .login {
+    float: left;
+    padding-left: 51px; }
+    /* line 411, ../sass/styleshop.scss */
+    .register .bloc .login form {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e5e6e7;
+      width: 420px; }
+      /* line 416, ../sass/styleshop.scss */
+      .register .bloc .login form .input {
+        padding: 10px 0 10px 0; }
+        /* line 418, ../sass/styleshop.scss */
+        .register .bloc .login form .input label {
+          font-family: 'AllerLightRegular';
+          font-size: 12px;
+          line-height: 22px;
+          color: #323b49;
+          display: block; }
+        /* line 425, ../sass/styleshop.scss */
+        .register .bloc .login form .input input {
+          height: 33px;
+          width: 200px;
+          border: 1px solid #c3c3c3;
+          background: #f9f9f9; }
+      /* line 433, ../sass/styleshop.scss */
+      .register .bloc .login form .submit input {
+        background: url("img/submit.png") no-repeat;
+        background-position: 0 0;
+        width: 142px;
+        height: 39px;
+        border: 0 none;
+        color: #FFF;
+        font-family: 'AllerRegular';
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+      /* line 444, ../sass/styleshop.scss */
+      .register .bloc .login form .submit input:hover {
+        background: url("img/submit.png") no-repeat;
+        background-position: 0 -42px; }
+
+/*
+CHECKOUT
+*/
+/* line 462, ../sass/styleshop.scss */
+.checkout .proceed, .checkout input[type=submit] {
+  border: none;
+  background: url("img/proceed.png") no-repeat;
+  background-position: 0 0;
+  width: 177px;
+  height: 47px;
+  display: block;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  line-height: 47px;
+  color: #FFF;
+  font-family: 'AllerRegular';
+  font-size: 16px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 15px; }
+/* line 479, ../sass/styleshop.scss */
+.checkout .proceed:hover, .checkout input[type=submit] {
+  background-position: 0 -49px; }
+/* line 482, ../sass/styleshop.scss */
+.checkout .title {
+  height: 80px;
+  border-top: 1px solid #e5e6e7;
+  border-bottom: 1px solid #e5e6e7; }
+  /* line 486, ../sass/styleshop.scss */
+  .checkout .title h2 {
+    height: 80px;
+    line-height: 80px;
+    font-family: 'AllerRegular';
+    font-size: 30px;
+    color: #323b49;
+    width: 464px;
+    float: left;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8); }
+/* line 498, ../sass/styleshop.scss */
+.checkout .table {
+  background: #FFF;
+  border-bottom: 1px solid #e5e6e7; }
+  /* line 501, ../sass/styleshop.scss */
+  .checkout .table .rowtitle {
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #e5e6e7;
+    border-left: 1px solid #e5e6e7;
+    padding-left: 170px;
+    font-family: 'AllerBold';
+    color: #323b49;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8); }
+    /* line 511, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span {
+      float: left; }
+    /* line 512, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span.name {
+      width: 338px;
+      display: block; }
+    /* line 516, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span.price {
+      width: 130px;
+      display: block; }
+    /* line 520, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span.quantity {
+      width: 130px;
+      display: block; }
+    /* line 524, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span.subtotal {
+      width: 130px;
+      display: block; }
+    /* line 528, ../sass/styleshop.scss */
+    .checkout .table .rowtitle span.action {
+      width: 79px;
+      display: block;
+      border-right: 1px solid #e5e6e7;
+      border-left: 1px solid #e5e6e7;
+      text-align: center; }
+  /* line 537, ../sass/styleshop.scss */
+  .checkout .table .row.grey {
+    background: #fcfcfc; }
+  /* line 540, ../sass/styleshop.scss */
+  .checkout .table .row {
+    overflow: hidden;
+    background: #FFF;
+    height: 81px;
+    line-height: 81px;
+    border-bottom: 1px solid #e5e6e7;
+    border-left: 1px solid #e5e6e7; }
+    /* line 548, ../sass/styleshop.scss */
+    .checkout .table .row a.img {
+      width: 168px;
+      margin-top: 15px;
+      display: block;
+      float: left;
+      text-align: center; }
+    /* line 555, ../sass/styleshop.scss */
+    .checkout .table .row span {
+      float: left;
+      font-family: 'AllerRegular';
+      font-size: 12px;
+      color: #78c04f;
+      text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8); }
+    /* line 562, ../sass/styleshop.scss */
+    .checkout .table .row span.name {
+      width: 340px;
+      display: block; }
+    /* line 566, ../sass/styleshop.scss */
+    .checkout .table .row span.price {
+      width: 130px;
+      display: block; }
+    /* line 570, ../sass/styleshop.scss */
+    .checkout .table .row span.quantity {
+      width: 57px;
+      display: block;
+      text-align: center;
+      padding-right: 73px; }
+      /* line 575, ../sass/styleshop.scss */
+      .checkout .table .row span.quantity input {
+        height: 33px;
+        width: 20px;
+        border: 1px solid #c3c3c3;
+        background: #f9f9f9; }
+    /* line 582, ../sass/styleshop.scss */
+    .checkout .table .row span.subtotal {
+      width: 130px;
+      display: block; }
+    /* line 586, ../sass/styleshop.scss */
+    .checkout .table .row span.action {
+      width: 79px;
+      display: block;
+      border-right: 1px solid #e5e6e7;
+      border-left: 1px solid #e5e6e7;
+      text-align: center; }
+  /* line 594, ../sass/styleshop.scss */
+  .checkout .table .rowtotal {
+    height: 57px;
+    line-height: 57px;
+    border-right: 1px solid #e5e6e7;
+    border-left: 1px solid #e5e6e7;
+    font-family: 'AllerLightRegular';
+    color: #323b49;
+    font-size: 16px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    padding-left: 796px; }
+    /* line 604, ../sass/styleshop.scss */
+    .checkout .table .rowtotal .total {
+      text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+      font-family: 'AllerBold';
+      color: #323b49;
+      font-size: 16px; }
+
+/*
+PAGINATION
+*/
+/* line 630, ../sass/styleshop.scss */
+#pagination {
+  background: #FFF;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e5e6e7; }
+  /* line 637, ../sass/styleshop.scss */
+  #pagination ul li.page {
+    width: 80px;
+    border-left: 1px solid #e5e6e7;
+    border-right: 1px solid #e5e6e7;
+    text-align: center;
+    margin-right: 20px; }
+    /* line 643, ../sass/styleshop.scss */
+    #pagination ul li.page a {
+      font-family: 'AllerBold'; }
+  /* line 647, ../sass/styleshop.scss */
+  #pagination ul li {
+    float: left;
+    font-family: 'AllerLightRegular';
+    font-size: 11px;
+    color: #919aa8;
+    width: 40px; }
+    /* line 654, ../sass/styleshop.scss */
+    #pagination ul li a {
+      font-family: 'AllerLightRegular';
+      font-size: 11px;
+      color: #919aa8;
+      text-decoration: none;
+      width: 40px; }
+
+/*
+Sticky
+*/
+/* line 669, ../sass/styleshop.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 672, ../sass/styleshop.scss */
+html, body {
+  height: 100%; }
+
+/* line 674, ../sass/styleshop.scss */
+#wrap {
+  min-height: 100%;
+  background: #F9F9F9; }
+
+/* line 676, ../sass/styleshop.scss */
+#main {
+  overflow: auto;
+  padding-bottom: 57px; }
+
+/* must be same height as the footer */
+/* line 679, ../sass/styleshop.scss */
+#footer {
+  position: relative;
+  margin-top: -57px;
+  /* negative value of footer height */
+  height: 57px;
+  clear: both;
+  background: url("img/footer.png") repeat; }
+  /* line 684, ../sass/styleshop.scss */
+  #footer p, #footer a {
+    line-height: 57px;
+    font-family: 'AllerRegular';
+    font-size: 12px;
+    color: #FFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8); }
+
+/*Opera Fix*/
+/* line 695, ../sass/styleshop.scss */
+body:before {
+  /* thanks to Maleika (Kohoutec)*/
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/ }
+
+@font-face {
+  font-family: 'AllerLightRegular';
+  src: url("fonts/AllerLight/aller_lt-webfont.eot");
+  src: url("fonts/AllerLight/aller_lt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/AllerLight/aller_lt-webfont.woff") format("woff"), url("fonts/AllerLight/aller_lt-webfont.ttf") format("truetype"), url("fonts/AllerLight/aller_lt-webfont.svg#AllerLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'AllerRegular';
+  src: url("fonts/AllerRegular/aller_rg-webfont.eot");
+  src: url("fonts/AllerRegular/aller_rg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/AllerRegular/aller_rg-webfont.woff") format("woff"), url("fonts/AllerRegular/aller_rg-webfont.ttf") format("truetype"), url("fonts/AllerRegular/aller_rg-webfont.svg#AllerRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'AllerBold';
+  src: url("fonts/AllerBold/aller_bd-webfont.eot");
+  src: url("fonts/AllerBold/aller_bd-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/AllerBold/aller_bd-webfont.woff") format("woff"), url("fonts/AllerBold/aller_bd-webfont.ttf") format("truetype"), url("fonts/AllerBold/aller_bd-webfont.svg#AllerBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
