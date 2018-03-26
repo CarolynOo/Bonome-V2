@@ -19,17 +19,16 @@ var_dump($DB->query('SELECT * FROM product'));
 						<div class="description">
 							<?= $product->product_name; ?>
 							<a href="#" class="price"><?= number_format($product->price,2,',',' '); ?> €</a>
-						</div>
-						<a href="addpanier.php?id=<?= $product->id; ?>" class="gift addPanier">
-							Gift
-						</a>
-					
-						<a class="add addPanier" href="addpanier.php?id=<?= $product->id; ?>">
+							<a class="add addPanier" href="addpanier.php?id=<?= $product->id; ?>">
 							add
 						</a>
 							<a class="add" href="#">
-								add
+								AAAADDDDDD
 							</a>
+						</div>
+						
+					
+					
 					</div>
 				</div>
 			<?php endforeach ?>

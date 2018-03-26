@@ -1,6 +1,7 @@
 <?php
-require '_header.php'
+require '_header.php';
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
