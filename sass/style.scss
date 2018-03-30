@@ -219,6 +219,17 @@ img {
 }
 
 /*
+* === MASONRY ===
+*/
+
+.grid-item { 
+	width: 200px;
+	border-style: solid;
+    border-color: red;
+}
+.grid-item--width2 { width: 400px; }
+
+/*
 * === HOME ===
 */
 .home{

@@ -191,9 +191,22 @@ img {
   80% {
     margin-left: 0; } }
 /*
+* === MASONRY ===
+*/
+/* line 225, ../sass/style.scss */
+.grid-item {
+  width: 200px;
+  border-style: solid;
+  border-color: red; }
+
+/* line 230, ../sass/style.scss */
+.grid-item--width2 {
+  width: 400px; }
+
+/*
 * === HOME ===
 */
-/* line 224, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .home {
   height: 100vh;
   width: 100vw; }
@@ -201,7 +214,7 @@ img {
 /*
 * === PRESENTATION ===
 */
-/* line 235, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -209,7 +222,7 @@ img {
 /*
 * === PRESENTATION BONOME ===
 */
-/* line 246, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -217,7 +230,7 @@ img {
 /*
 * === COMPETENCES ===
 */
-/* line 257, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .skills {
   height: 100vh;
   width: 100vw; }
@@ -225,11 +238,11 @@ img {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 268, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .contact {
   height: 100vh;
   width: 100vw; }
-  /* line 273, ../sass/style.scss */
+  /* line 284, ../sass/style.scss */
   .contact .signup__form {
     background-color: #7673d4;
     width: 100%;
@@ -239,7 +252,7 @@ img {
     margin: 10px auto;
     justify-content: center;
     width: 30%; }
-    /* line 285, ../sass/style.scss */
+    /* line 296, ../sass/style.scss */
     .contact .signup__form input {
       width: auto;
       padding: 12px 20px;
@@ -248,7 +261,7 @@ img {
 /*
 * === MAIN ===
 */
-/* line 302, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 main {
   height: 100 vh; }
 
