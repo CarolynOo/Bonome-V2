@@ -1,4 +1,4 @@
-<?php require 'inscription.php'; ?>
+<?php require 'eshop-inscription.php'; ?>
 
 
 <!DOCTYPE html>

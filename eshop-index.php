@@ -1,14 +1,6 @@
 <?php require 'eshop-header.php'; ?>
 
-    <div class="main__shop-section-2 shop-section-2">
-        <h1>Le shop</h1>
-        <div class="shop-section-2__container">
-            <article></article>
-            <article></article>
-            <article></article>
-        </div>
-    </div>
-</main>
+   
 <!--/SHOP-->
 
 <div class="home">

@@ -74,3 +74,21 @@ $('.toggle').on('click', function(e) {
     }
   }
 });
+
+// Opacity
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 150) {
+      $('#slideshow-container').css('opacity', 0);
+      $('.navbar').css('background', 'red');
+    } else {
+      $('#slideshow-container').css('opacity', 1);
+      $('.navbar').css('background', 'transparent');
+      console.log("coucou");
+
+    }
+  });
+});
+
+  

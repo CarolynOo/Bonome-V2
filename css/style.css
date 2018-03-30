@@ -81,28 +81,127 @@ h2 {
   color: #44bd32; }
 
 /*
+* === NAVBAR ===
+*/
+/* line 112, ../sass/style.scss */
+.navbar {
+  position: fixed;
+  top: 0p;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 100vw;
+  padding: 20px; }
+  /* line 125, ../sass/style.scss */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; }
+  /* line 133, ../sass/style.scss */
+  .navbar li {
+    float: left; }
+  /* line 137, ../sass/style.scss */
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: hotpink; }
+  /* line 146, ../sass/style.scss */
+  .navbar li a:hover {
+    background-color: yellow; }
+
+/*
+* === slideshow ===
+*/
+/* line 156, ../sass/style.scss */
+img {
+  width: 100vw;
+  height: auto;
+  transition: .3s ease-in-out; }
+
+/* line 163, ../sass/style.scss */
+#box1, #box2, #box3, #box4, #box5 {
+  width: 100vw;
+  height: 50vh;
+  float: left; }
+
+/* line 170, ../sass/style.scss */
+#slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto; }
+
+/* line 177, ../sass/style.scss */
+#slideshow {
+  width: 1000%;
+  -webkit-animation: slideshow 20s infinite;
+  -moz-animation: slideshow 20s infinite;
+  -o-animation: slideshow 20s infinite;
+  -ms-animation: slideshow 20s infinite; }
+
+/* Animation
+=============================*/
+@-webkit-keyframes slideshow {
+  0%, 10%, 100% {
+    margin-left: 0; }
+  20%, 30% {
+    margin-left: -100vw; }
+  40%, 50% {
+    margin-left: -200vw; }
+  60%, 70% {
+    margin-left: -300vw; }
+  80% {
+    margin-left: 0; } }
+@-moz-keyframes slideshow {
+  0%, 10%, 100% {
+    margin-left: 0; }
+  20%, 30% {
+    margin-left: -100vw; }
+  40%, 50% {
+    margin-left: -200vw; }
+  60%, 70% {
+    margin-left: -300vw; }
+  80% {
+    margin-left: 0; } }
+@-o-keyframes slideshow {
+  0%, 10%, 100% {
+    margin-left: 0; }
+  20%, 30% {
+    margin-left: -100vw; }
+  40%, 50% {
+    margin-left: -200vw; }
+  60%, 70% {
+    margin-left: -300vw; }
+  80% {
+    margin-left: 0; } }
+@-ms-keyframes slideshow {
+  0%, 10%, 100% {
+    margin-left: 0; }
+  20%, 30% {
+    margin-left: -100vw; }
+  40%, 50% {
+    margin-left: -200vw; }
+  60%, 70% {
+    margin-left: -300vw; }
+  80% {
+    margin-left: 0; } }
+/*
 * === HOME ===
 */
-/* line 110, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .home {
   height: 100vh;
   width: 100vw; }
-  /* line 116, ../sass/style.scss */
-  .home__nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ec5946;
-    padding: 40px; }
-  /* line 126, ../sass/style.scss */
-  .home__inner {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff; }
 
 /*
 * === PRESENTATION ===
 */
-/* line 139, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -110,7 +209,7 @@ h2 {
 /*
 * === PRESENTATION BONOME ===
 */
-/* line 150, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -118,7 +217,7 @@ h2 {
 /*
 * === COMPETENCES ===
 */
-/* line 161, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .skills {
   height: 100vh;
   width: 100vw; }
@@ -126,11 +225,11 @@ h2 {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 172, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .contact {
   height: 100vh;
   width: 100vw; }
-  /* line 177, ../sass/style.scss */
+  /* line 273, ../sass/style.scss */
   .contact .signup__form {
     background-color: #7673d4;
     width: 100%;
@@ -140,106 +239,18 @@ h2 {
     margin: 10px auto;
     justify-content: center;
     width: 30%; }
-    /* line 189, ../sass/style.scss */
+    /* line 285, ../sass/style.scss */
     .contact .signup__form input {
       width: auto;
       padding: 12px 20px;
       margin: 8px 0; }
 
 /*
-* === Carrousel ===
+* === MAIN ===
 */
-/* line 208, ../sass/style.scss */
-.carousel-container {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden; }
-
-/* line 214, ../sass/style.scss */
-.carousel {
-  display: flex;
-  left: -100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  transform: translateX(100%); }
-
-@media (min-width: 30em) {
-  /* line 225, ../sass/style.scss */
-  .carousel {
-    left: -50%;
-    transform: translateX(50%); } }
-@media (min-width: 40em) {
-  /* line 232, ../sass/style.scss */
-  .carousel {
-    left: -33.33333%;
-    transform: translateX(33.33333%); } }
-/* line 238, ../sass/style.scss */
-.carousel.is-reversing {
-  transform: translateX(-100%); }
-
-@media (min-width: 30em) {
-  /* line 243, ../sass/style.scss */
-  .carousel.is-reversing {
-    transform: translateX(-50%); } }
-@media (min-width: 40em) {
-  /* line 249, ../sass/style.scss */
-  .carousel.is-reversing {
-    transform: translateX(-33.33333%); } }
-/* line 254, ../sass/style.scss */
-.carousel.is-set {
-  transform: none;
-  transition: transform 0.5s ease-in-out; }
-
-/* line 259, ../sass/style.scss */
-.carousel-seat {
-  background: transparent;
-  flex: 1 0 100%;
-  order: 2; }
-
-/* line 265, ../sass/style.scss */
-.carousel-seat:nth-child(even) {
-  background: transparent; }
-
-@media (min-width: 30em) {
-  /* line 270, ../sass/style.scss */
-  .carousel-seat {
-    flex-basis: 50%; } }
-@media (min-width: 40em) {
-  /* line 276, ../sass/style.scss */
-  .carousel-seat {
-    flex-basis: 33.33333%; } }
-/* line 281, ../sass/style.scss */
-.carousel-seat.is-ref {
-  order: 1; }
-
-/* line 285, ../sass/style.scss */
-.container img {
-  width: 800px;
-  height: auto;
-  font-weight: normal;
-  margin: 0;
-  padding: 0.6em 0;
-  text-align: center; }
-
-/* line 294, ../sass/style.scss */
-.controls {
-  padding: 1em;
-  text-align: center; }
-
-/* line 299, ../sass/style.scss */
-.controls button {
-  background: #aaa;
-  border: 0;
-  border-radius: 0.25em;
-  color: #eee;
-  padding: 0.5em 1em; }
-
-/* line 307, ../sass/style.scss */
-.controls button:hover,
-.controls button:focus {
-  background: orange; }
+/* line 302, ../sass/style.scss */
+main {
+  height: 100 vh; }
 
 /*
 * === FOOTER ===
