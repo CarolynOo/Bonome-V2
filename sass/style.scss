@@ -118,7 +118,9 @@ h2{
 	justify-content: center;
 	background-color: transparent;
 	width: 100vw;
-	padding:20px;
+	height:100px;
+	padding-top: 20px;
+	transition: all 0.2s ease;
 
 	
 
@@ -172,6 +174,8 @@ img {
   position: relative;
   overflow: hidden;
   margin: auto;
+  transition: all 1s ease;
+
 }
 
 #slideshow {
@@ -181,10 +185,12 @@ img {
   -moz-animation: slideshow 20s infinite;
   -o-animation: slideshow 20s infinite;
   -ms-animation: slideshow 20s infinite;
+
 }
 
-/* Animation
-=============================*/
+/*
+* === slideshow Animation===
+*/
 
 @-webkit-keyframes slideshow {
   0%, 10%, 100% {margin-left: 0; }
@@ -223,11 +229,21 @@ img {
 */
 
 .grid-item { 
-	width: 200px;
-	border-style: solid;
-    border-color: red;
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
-.grid-item--width2 { width: 400px; }
+
+
+.grid-item--width2 { 
+	width: 400px; 
+}
+
+/*
+* === MASONRY TEST===
+*/
+
 
 /*
 * === HOME ===

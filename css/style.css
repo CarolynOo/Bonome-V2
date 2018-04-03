@@ -92,17 +92,19 @@ h2 {
   justify-content: center;
   background-color: transparent;
   width: 100vw;
-  padding: 20px; }
-  /* line 125, ../sass/style.scss */
+  height: 100px;
+  padding-top: 20px;
+  transition: all 0.2s ease; }
+  /* line 127, ../sass/style.scss */
   .navbar ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden; }
-  /* line 133, ../sass/style.scss */
+  /* line 135, ../sass/style.scss */
   .navbar li {
     float: left; }
-  /* line 137, ../sass/style.scss */
+  /* line 139, ../sass/style.scss */
   .navbar li a {
     display: block;
     color: white;
@@ -110,33 +112,34 @@ h2 {
     padding: 14px 16px;
     text-decoration: none;
     color: hotpink; }
-  /* line 146, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   .navbar li a:hover {
     background-color: yellow; }
 
 /*
 * === slideshow ===
 */
-/* line 156, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 img {
   width: 100vw;
   height: auto;
   transition: .3s ease-in-out; }
 
-/* line 163, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 #box1, #box2, #box3, #box4, #box5 {
   width: 100vw;
   height: 50vh;
   float: left; }
 
-/* line 170, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 #slideshow-container {
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin: auto; }
+  margin: auto;
+  transition: all 1s ease; }
 
-/* line 177, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 #slideshow {
   width: 1000%;
   -webkit-animation: slideshow 20s infinite;
@@ -144,8 +147,9 @@ img {
   -o-animation: slideshow 20s infinite;
   -ms-animation: slideshow 20s infinite; }
 
-/* Animation
-=============================*/
+/*
+* === slideshow Animation===
+*/
 @-webkit-keyframes slideshow {
   0%, 10%, 100% {
     margin-left: 0; }
@@ -193,20 +197,24 @@ img {
 /*
 * === MASONRY ===
 */
-/* line 225, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .grid-item {
-  width: 200px;
-  border-style: solid;
-  border-color: red; }
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.5); }
 
-/* line 230, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .grid-item--width2 {
   width: 400px; }
 
 /*
+* === MASONRY TEST===
+*/
+/*
 * === HOME ===
 */
-/* line 235, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .home {
   height: 100vh;
   width: 100vw; }
@@ -214,7 +222,7 @@ img {
 /*
 * === PRESENTATION ===
 */
-/* line 246, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -222,7 +230,7 @@ img {
 /*
 * === PRESENTATION BONOME ===
 */
-/* line 257, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .presentation {
   height: 100vh;
   width: 100vw; }
@@ -230,7 +238,7 @@ img {
 /*
 * === COMPETENCES ===
 */
-/* line 268, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .skills {
   height: 100vh;
   width: 100vw; }
@@ -238,11 +246,11 @@ img {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 279, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .contact {
   height: 100vh;
   width: 100vw; }
-  /* line 284, ../sass/style.scss */
+  /* line 300, ../sass/style.scss */
   .contact .signup__form {
     background-color: #7673d4;
     width: 100%;
@@ -252,7 +260,7 @@ img {
     margin: 10px auto;
     justify-content: center;
     width: 30%; }
-    /* line 296, ../sass/style.scss */
+    /* line 312, ../sass/style.scss */
     .contact .signup__form input {
       width: auto;
       padding: 12px 20px;
@@ -261,7 +269,7 @@ img {
 /*
 * === MAIN ===
 */
-/* line 313, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 main {
   height: 100 vh; }
 
