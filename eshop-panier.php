@@ -1,82 +1,110 @@
-<?php require 'eshop-connexiondb.php'; ?>
-<div class="checkout">
+<?php
+require 'eshop-connexiondb.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Eshop Bonome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/eshop-style.css" />
+
+</head>
+<body>
+
+    <nav class="navbar">
+      <ul>
+          <li><a href="eshop-index.php">Le Shop</a></li>
+      </ul>
+  </nav>
+  <div class="checkout">
     <div class="title">
-        <div class="wrap">
-        <h2 class="first">Shopping Cart</h2>
-        </div>
+
+     <main class="main">
+
+
+        <h2>Shopping Cart</h2>
+
+        <h1> 
+            <div class="rowtotal">
+                Grand Total avec TVA: <span class="total"><?= number_format($panier->total() * 1.196,2,',',' '); ?> € </span>
+        </h1>
+        </div> 
     </div>
     <form method="post" action="eshop-panier.php">
-    <div class="table">
-        <div class="wrap">
+        <div class="table">
+            <div class="wrap">
+               <table border="1" width="70%">
+                <thead>
+                 <tr>
+                     <th class="img"> Photo Produit </th>
+                     <th>Produit</th>
+                     <th class="number">Prix Unitaire</th>
 
-            <div class="rowtitle">
-                <span class="name">Product name</span>
-                <span class="price">Price</span>
-                <span class="quantity">Quantity</span>
-                <span class="subtotal">Prix avec TVA</span>
-                <span class="action">Actions</span>
+                     <th class="number">Quantité</th>
+                     <th class="number">Prix Total</th>
+                     <th class="action">Action</th>
+                 </tr>
+             </thead>
+             <tbody>
+
+                 <?php
+                 $ids = array_keys($_SESSION['panier']);
+
+                 if(empty($ids)){
+                    $products = array();
+                }else{
+                    $products = $DB->query('SELECT * FROM product WHERE id IN ('.implode(',',$ids).')');
+                }
+                foreach($products as $product):
+                    ?>
+
+                  
+
+                    <tr>
+                     <td> <img class="imgproduct" src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg"> </td>
+
+                     <td class="name"><?= $product->product_name; ?></td>
+
+                    <td class="price"><?= number_format($product->price,2,',',' '); ?> €</td>
+
+                    <td class="quantity"><input type="text" name="panier[quantity][<?= $product->id; ?>]" value="<?= $_SESSION['panier'][$product->id]; ?>"><input type="submit" value="Recalculer"></td>
+
+                    <td class="subtotal"><?= number_format($product->price * 1.196,2,',',' '); ?> €</td>
+
+                    <td class="action">
+
+                     <a href="eshop-panier.php?delPanier=<?= $product->id; ?>" class="del"><img class="icon" src="img/trash-icon.png"></a>
+                    </tr>
+                                    
+                   
+                   
+                    <?php endforeach; ?>
+
+                     </tbody>
+                    </table>
+
+                    
+                </div>
             </div>
-
-            <?php
-            $ids = array_keys($_SESSION['panier']);
-            if(empty($ids)){
-                $products = array();
-            }else{
-                $products = $DB->query('SELECT * FROM product WHERE id IN ('.implode(',',$ids).')');
-            }
-            foreach($products as $product):
-            ?>
-            <div class="row">
-                <a href="#" class="img"> 
-              
-                <img src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg" height="53">
-
-                <span class="name"><?= $product->product_name; ?></span>
-
-                <span class="price"><?= number_format($product->price,2,',',' '); ?> €</span>
-
-                <span class="quantity"><input type="text" name="panier[quantity][<?= $product->id; ?>]" value="<?= $_SESSION['panier'][$product->id]; ?>"></span>
-
-                <span class="subtotal"><?= number_format($product->price * 1.196,2,',',' '); ?> €</span>
-
-                <span class="action">
-
-                    <a href="eshop-panier.php?delPanier=<?= $product->id; ?>" class="del"><img src="img/del.png"></a>
-                </span>
-            </div>
-            <?php endforeach; ?>
-            <div class="rowtotal">
-                Grand Total : <span class="total"><?= number_format($panier->total() * 1.196,2,',',' '); ?> € </span>
-            </div>
-            <input type="submit" value="Recalculer">
-        </div>
-    </div>
-    </form>
-</div>
-<?php require 'eshop-footer.php'; ?>
-
-
-<!--CHECKOUT-->
-<main class="main">
-    <div class="main__checkout-section checkout-section">
-        <div class="checkout-section-title">
-            <h2>Récapitulatif Panier</h2>
-        </div>
-        <div class="product-container">
-            <div class="product-img"></div>
-            <div class="product-infos">
-                <p>Nom produit</p>
-                <p>blablabla</p>
-            </div>
-            <div class="product-price">
-                <p>prix</p>
-                <p>350€</p>
-            </div>
-            <div class="product-action">
-                <button>Confirmer</button>
-                <button>Supprimer</button>
-            </div>
-        </div>
+        </form>
     </div>
 </main>
-<!--/CHECKOUT-->
+
+<footer>
+
+    <div id="footer">
+
+        <p>© Bonome - 2018</p>
+
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+

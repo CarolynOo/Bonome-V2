@@ -1,34 +1,52 @@
 <?php require 'eshop-header.php'; ?>
 
-   
-<!--/SHOP-->
+<!--AFFICHAGE PRODUITS-->
 
-<div class="home">
+<main>
 
-    
-      <?php $product = $DB->query('SELECT * FROM product'); ?>
+  <div class="home">
 
-      <?php foreach ( $product as $product ): ?>
-        
-          
-          
-                <img src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg">
-          
-            <div class="description">
-              <?= $product->product_name; ?>
-              <a href="#" class="price"><?= number_format($product->price,2,',',' '); ?> €</a>
-            </div>
-           
-         
-            <a class="add addPanier" href="eshop-addpanier.php?id=<?= $product->id; ?>">
-              add
-            </a>
-          </div>
-        
-      <?php endforeach ?>
-    
+
+    <?php $product = $DB->query('SELECT * FROM product'); ?>
+
+    <?php foreach ( $product as $product ): ?>
+
+
+      <div class="masonry">
+        <div class="item">
+         <img src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg">
+         <div class="description">
+          <?= $product->product_name; ?>
+          <a href="#" class="price"><?= number_format($product->price,2,',',' '); ?> €</a>
+        </div>
+        <a class="add addPanier" href="eshop-addpanier.php?id=<?= $product->id; ?>">
+          Ajouter au Panier
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+<?php endforeach ?>
+
+
+</main>
+
+
+
+<!--/AFFICHAGE PRODUITS-->
+
+
+<?php
+require 'eshop-footer.php';
+?>
+
+
   
-</div>
+</body>
+</html>
 
 
-<?php require 'eshop-footer.php'; ?>
+
+

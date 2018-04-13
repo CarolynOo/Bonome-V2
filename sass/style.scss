@@ -48,8 +48,7 @@ body{
 	font-family: 'Open Sans', serif;
 	font-weight: lighter;
 	line-height: 1.5em;
-	color: #181c52;
-	background-color: #f5eeb8;
+	color: #f2F2F2;
 	overflow: scroll;
 
 }
@@ -62,7 +61,7 @@ a{
 
 /* unvisited link */
 a:link {
-	color: #fff;
+	color: blue;
 }
 
 /* visited link */
@@ -72,7 +71,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	color: #fff;
+	color: red;
 }
 
 /* selected link */
@@ -100,7 +99,7 @@ h2{
 	font-family: 'Press Start 2P', cursive;
 	font-weight:  lighter;
 	padding: 10px;
-	color:#44bd32;
+	
 
 }
 
@@ -138,11 +137,11 @@ h2{
 
 	li a {
 		display: block;
-		color: white;
+		
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
-		color: hotpink;
+		color: black;
 	}
 
 	li a:hover {
@@ -164,7 +163,7 @@ img {
 
 #box1, #box2, #box3, #box4, #box5 {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   float: left;
  }
 
@@ -224,47 +223,11 @@ img {
   80% {margin-left: 0;}
 }
 
-/*
-* === MASONRY ===
-*/
-
-.grid-item { 
-  float: left;
-  width: 80px;
-  height: 60px;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
-}
-
-
-.grid-item--width2 { 
-	width: 400px; 
-}
 
 /*
 * === MASONRY TEST===
 */
-body {
-  font-family: sans-serif;
-   margin: 0;
-   background: #f2f2f2;
-}
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-p {
-  text-align: center;
-  margin-bottom:60px;
-}
-
-h4{
-  text-align:center; 
-  line-height:80px;
-  font-weight:normal;
-
-}
 
 .masonry { /* Masonry container */
     -webkit-column-count: 4;
@@ -280,19 +243,53 @@ h4{
     column-gap: 1.5em;
     font-size: .85em;
 }
-.item {
+.masonry-item {
+    opacity: 1;
     display: inline-block;
     background: #fff;
     padding: 1em;
     margin: 0 0 1.5em;
     width: 100%;
-	-webkit-transition:1s ease all;
+	//-webkit-transition:1s ease all;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 4px 0 #ccc;
+      opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+   text-align: center;
+    display: inline-block;
+    position: relative;
 }
-.item img{max-width:100%;}
+
+ .masonry-item:hover p.text {
+        opacity: 1;
+    }
+
+
+
+.masonry-item p.text {
+    color: #FFF;
+    width: auto;
+    height: auto;
+   background-color: rgba(0, 0, 0, 0.2); 
+    margin: 0 auto;
+    top: 0;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+}
+
+.masonry-item img{max-width:100%;}
+
+
+
+
 
 @media only screen and (max-width: 320px) {
     .masonry {
@@ -311,18 +308,19 @@ h4{
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry {
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
     }
 }
-@media only screen and (min-width: 1201px) {
-    .masonry {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
-}
+
 
 /*
 * === HOME ===
@@ -335,45 +333,74 @@ h4{
 }
 
 /*
+* === ATELIER PRESENTATION ===
+*/
+
+html, body, #page-one, #page-two, #page-three, #page-four {
+  height:100vh;
+}
+
+#page-one, #page-two, #page-three, #page-four {
+	padding-top:2em;
+}
+
+#mainNav {
+  background-color: #668AE4;
+  color: orange;
+  line-height:4em;
+  padding:0 1em;
+  position:fixed; 
+  top: 0em; 
+  width:100%; 
+  justify-content: center;
+  position: fixed;
+	top : 0p;
+	z-index: 1000;
+	display:flex;
+	
+}
+
+#mainNav {
+  a, a:link, a:visited, a:hover, a:active {
+    color: lightgreen; 
+    text-decoration:none;
+    display:inline-block;
+    padding:0 1em;
+  }
+  a:hover {color: #4861A2;}
+}
+
+h2 {font-size:3em; padding-top:1em; text-align:center;}
+
+#page-one {background-color:#fff;}
+#page-two {background-color:#ccc;}
+#page-three {background-color:#aaa;}
+#page-four {background-color:#888;}
+
+/*
 * === PRESENTATION ===
 */
 
-.presentation{
-
-	height: 100vh;
-	width: 100vw;
-}
 
 
 /*
 * === PRESENTATION BONOME ===
 */
 
-.presentation{
-	
-	height: 100vh;
-	width: 100vw;
 
-}
 
 /*
 * === COMPETENCES ===
 */
 
-.skills{
-	
-	height: 100vh;
-	width: 100vw;
-}
+
 
 
 /*
 * ===  FORMULAIRE ===
 */
 
-.contact{
-	height: 100vh;
-	width: 100vw;
+
 
 
 	.signup__form{
@@ -398,16 +425,13 @@ h4{
 		}
 
 	}
-}
+
 
 
 /*
 * === MAIN ===
 */ 
 
-main{
-	height: 100 vh;
-}
 
 
 

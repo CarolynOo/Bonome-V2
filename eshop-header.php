@@ -15,62 +15,31 @@ require 'eshop-connexiondb.php';
 </head>
 <body>
 
-  <!--SHOP-->
+<header>
 
-
-
-  <header>
-    <nav>
+    <nav class="navbar">
       <ul>
-        <li><a href="#">L'atelier</a></li>
-        <li><a href="#">Bonome</a></li>
-        <li><a href="#">Le Shop</a></li>
+      
+        <li><a href="eshop-index.php">Le Shop</a></li>
 
       </ul>
     </nav>
 
 
 
+    <div id="slideshow-container">
+      <div id="slideshow">
+        <div id="box1">  <img src="img/fake-meubles/resize/1.jpg"/></div>
 
-    <div class='container'>
-      <ul class='carousel is-set'>
-        <li class='carousel-seat'>
+        <div id="box2">  <img src="img/fake-meubles/resize/5.jpg"/></div>
 
-          <img src="img/fake-meubles/resize/1.jpg" alt="dev1" class="carrousel_img"></img>
-        </li>
-        <li class='carousel-seat'>
+        <div id="box3">  <img src="img/fake-meubles/resize/8.jpg"/></div>
 
-          <img src="img/fake-meubles/resize/5.jpg" alt="dev2" class="carrousel_img"></img>
-        </li>
-        <li class='carousel-seat'>
+        <div id="box4">  <img src="img/fake-meubles/resize/4.jpg"/></div>
 
-          <img src="img/fake-meubles/resize/6.jpg" alt="dev3" class="carrousel_img"></img>
-        </li>
-        <li class='carousel-seat'>
-
-          <img src="img/fake-meubles/resize/8.jpg" alt="dev4" class="carrousel_img"></img>
-        </li>
-        <li class='carousel-seat'>
-
-          <img src="img/fake-meubles/resize/1.jpg" alt="dev5" class="carrousel_img"></img>
-        </li>
-        <li class='carousel-seat is-ref'>
-
-          <img src="img/fake-meubles/resize/5.jpg" alt="dev6" class="carrousel_img"></img>
-        </li>
-      </ul>
+        <div id="box5">  <img src="img/fake-meubles/resize/5.jpg"/></div>
+      </div>
     </div>
-    <div class='controls'>
-      <button class='toggle' data-toggle='prev'>Prev</button>
-      <button class='toggle' data-toggle='next'>Next</button>
-    </div>
-
-
-
   </header>
 
-</main>
-
-<?php
-require 'eshop-footer.php';
-?>
+  
