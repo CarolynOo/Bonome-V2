@@ -419,25 +419,55 @@ h2 {
   background-color: #888; }
 
 /*
+* === SCROLL BUTTON ===
+*/
+/* line 457, ../sass/style.scss */
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; }
+
+/* line 474, ../sass/style.scss */
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  color: pink; }
+
+/* line 480, ../sass/style.scss */
+.fas {
+  color: yellow; }
+
+/*
 * === PRESENTATION ===
 */
 /*
 * === COMPETENCES ===
 */
-/* line 464, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .flexContainer {
   display: flex; }
 
-/* line 467, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .flexSpaceAround {
   justify-content: space-around; }
 
-/* line 470, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .subContainer {
   width: 80%;
   margin: 0 auto; }
 
-/* line 474, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .col {
   width: 32%;
   border: 1px solid #777777;
@@ -448,12 +478,12 @@ h2 {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 488, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .wrapper {
   height: 70 vw;
   width: 70 vh; }
 
-/* line 493, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .contactform {
   display: block;
   position: relative;
@@ -465,7 +495,7 @@ h2 {
   overflow: hidden;
   opacity: 1; }
 
-/* line 505, ../sass/style.scss */
+/* line 549, ../sass/style.scss */
 .formulaire {
   display: block;
   position: relative;
@@ -473,7 +503,7 @@ h2 {
   margin: auto;
   padding: 3em 0; }
 
-/* line 513, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .contactform .formulaire p {
   padding: 0.5em;
   color: #313C40;
@@ -482,7 +512,7 @@ h2 {
   font-weight: 300 !important;
   font-size: 1em; }
 
-/* line 522, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 .contactform h2 {
   padding: 1em 0.5em 1.5em 0.5em;
   position: relative;
@@ -493,7 +523,7 @@ h2 {
   font-weight: 300 !important;
   font-size: 1.1em; }
 
-/* line 533, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -503,7 +533,7 @@ textarea {
   border: 1px solid #fff;
   color: #313C40; }
 
-/* line 543, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 input[type="text"]:hover,
 input[type="email"]:hover,
 textarea:hover {
@@ -511,7 +541,7 @@ textarea:hover {
   background-color: rgba(49, 61, 64, 0.3);
   color: #313C40; }
 
-/* line 551, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 input[type="submit"] {
   width: 100px;
   height: 20px;
@@ -520,14 +550,133 @@ input[type="submit"] {
   border: 1px solid #313C40;
   color: #313C40; }
 
-/* line 560, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 input[type="submit"]:hover {
   background-color: #313C40;
   color: #fff; }
 
 /*
-* === MAIN ===
+* === PROJETS CAROUSEL===
 */
+/* line 615, ../sass/style.scss */
+.jcarousel img {
+  width: 200px;
+  height: 200px; }
+
+/* line 620, ../sass/style.scss */
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid #fff;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+/* line 635, ../sass/style.scss */
+.jcarousel-wrapper .photo-credits {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  opacity: .66; }
+
+/* line 645, ../sass/style.scss */
+.jcarousel-wrapper .photo-credits a {
+  color: #fff; }
+
+/** Carousel **/
+/* line 651, ../sass/style.scss */
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+/* line 656, ../sass/style.scss */
+.jcarousel ul {
+  width: 10000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 664, ../sass/style.scss */
+.jcarousel li {
+  float: left; }
+
+/** Carousel Controls **/
+/* line 670, ../sass/style.scss */
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: yellow;
+  color: pink;
+  text-decoration: none;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+/* line 690, ../sass/style.scss */
+.jcarousel-control-prev {
+  left: -50px; }
+
+/* line 694, ../sass/style.scss */
+.jcarousel-control-next {
+  right: -50px; }
+
+/* line 698, ../sass/style.scss */
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+/* line 703, ../sass/style.scss */
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default; }
+
+/** Carousel Pagination **/
+/* line 711, ../sass/style.scss */
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 15px; }
+
+/* line 717, ../sass/style.scss */
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75; }
+
+/* line 736, ../sass/style.scss */
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
+
 /*
 * === FOOTER ===
 */

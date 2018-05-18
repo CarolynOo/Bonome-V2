@@ -10,8 +10,8 @@ ob_start();
 <div class="masonry">
     <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/1.jpg" alt="Alt text" />
+ <a href="atelier-projets.html">
+  <img class="image" src="../img/fake-meubles/resize/medium/1.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -26,7 +26,7 @@ ob_start();
     <div class="masonry-item">
 <div class="overlay-image">
  <a href="#">
-  <img class="image" src="img/fake-meubles/resize/medium/2.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/2.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -40,7 +40,7 @@ ob_start();
      <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/3.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/3.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -54,7 +54,7 @@ ob_start();
       <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/4.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/4.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -68,7 +68,7 @@ ob_start();
       <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/5.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/5.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -82,7 +82,7 @@ ob_start();
       <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/6.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/6.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -96,7 +96,7 @@ ob_start();
       <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/7.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/7.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
@@ -110,7 +110,7 @@ ob_start();
       <div class="masonry-item">
 <div class="overlay-image">
  <a href="URL_LIEN">
-  <img class="image" src="img/fake-meubles/resize/medium/8.jpg" alt="Alt text" />
+  <img class="image" src="../img/fake-meubles/resize/medium/8.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>

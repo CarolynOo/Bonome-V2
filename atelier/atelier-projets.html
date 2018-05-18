@@ -1,19 +1,93 @@
-<main class="main">
-    <div class="main__project-section project-section">
-        <h1 class="project-title">Projet Y</h1>
-        <div class="project-section__container">
-            <div class="project-section__carrousel carrousel">
-                <div class="carrousel__child-1"></div>
-                <div class="carrousel__child-2"></div>
-                <div class="carrousel__child-3"></div>
-                <div class="carrousel__child-4"></div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Atelier Bonome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
+
+  <script type="text/javascript" src="../js/jcarousel.basic.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/fontawesome-all.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+
+
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="../atelier/views/view-presentation.php">Atelier</a></li>
+        
+        <li><a href="../eshop/eshop-index.php">Le Shop</a></li>
+
+    </ul>
+</nav>
+
+
+
+</header>
+
+<main>
+
+  <?php echo $content; ?>
+
+  <div class="jcarousel">
+    <ul>
+        <li>...</li>
+        <li>...</li>
+    </ul>
+</div>
+
+</main>
+<script src="../js/main.js"></script>
+<script src="../js/main-projects.js"></script>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="../js/jcarousel.basic.js"></script>
+<script src="../js/masonry.pkgd.min.js"></script>
+
+
+
+
+</body>
+</html>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Basic carousel</h1>
+
+     
+
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="../img/fake-meubles/resize/medium/1.jpg"></li>
+                    <li><img src="../img/fake-meubles/resize/medium/2.jpg"></li>
+                    <li><img src="../img/fake-meubles/resize/medium/3.jpg"></li>
+                    <li><img src="../img/fake-meubles/resize/medium/4.jpg"></li>
+                    <li><img src="../img/fake-meubles/resize/medium/5.jpg"></li>
+                    <li><img src="../img/fake-meubles/resize/medium/6.jpg"></li>
+                </ul>
             </div>
-            <div class="project-section__inner-container">
-                <div class="project-section__information">
-                    <h1 class="project-informations">Information Projet</h1>
-                </div>
-                <button class="next-button">suivant</button>
-            </div>
+
+           
+
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+            <p class="jcarousel-pagination">
+
+            </p>
         </div>
     </div>
-</main>
+
+</body>

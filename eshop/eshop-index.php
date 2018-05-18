@@ -16,7 +16,7 @@
 
       <div class="masonry">
         <div class="item">
-         <img src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg">
+         <img src="../img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg">
          <div class="description">
           <?= $product->product_name; ?>
           <a href="#" class="price"><?= number_format($product->price,2,',',' '); ?> €</a>

@@ -35,7 +35,5 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
          ?>
       </div>
    </body>
-</html>
-<?php   
+</html>  
 }
-?>

@@ -13,8 +13,8 @@ require 'eshop-connexiondb.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Eshop Bonome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="css/eshop-style.css" />
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/eshop-style.css" />
 
 </head>
 <body>
