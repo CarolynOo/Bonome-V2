@@ -25,7 +25,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
   display: block;
 }
 body {
@@ -185,12 +185,51 @@ h1{
 	}
 }
 
+.navbar2{
+
+  // position: fixed;
+  display:flex;
+  justify-content: center;
+  background-color: #808080;
+  width: 100vw;
+  height:50px;
+ 
+
+  
+
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+  li a:hover {
+    background-color: yellow;
+  }
+}
+
+
 
 /*
 * === slideshow ===
 */
 
-img {
+#slideshow img {
   width: 100vw;
   height: auto;
   transition: .3s ease-in-out;
@@ -437,7 +476,7 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   a:hover {color: #4861A2;}
 }
 
-h2 {
+#mainNav h2 {
   font-size:2em; 
   padding-top:1.5em; 
   text-align:center;
@@ -610,139 +649,63 @@ input[type="submit"]:hover {
 
 
 /*
-* === PROJETS CAROUSEL===
+* === PROJETS ===
 */ 
-.jcarousel img{
-   width: 200px;
-    height: 200px;
+
+.container-projets{
+ display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: yellow; 
+  height: 100vh;
+
+    justify-content: space-around;
+
 }
 
-.jcarousel-wrapper {
-    margin: 20px auto;
-    position: relative;
-    border: 10px solid #fff;
-    width: 200px;
-    height: 200px;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+.container-projets h2{
+
+  margin: 0 auto;
 }
 
 
-.jcarousel-wrapper .photo-credits {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-    opacity: .66;
+.carousel{
+background-color: blue; 
+border-color: black;
+width: 50vw;
+height: 50vw;
+margin: 10px;
+text-align: center;
+
 }
 
-.jcarousel-wrapper .photo-credits a {
-    color: #fff;
+.carousel img{
+
+  width: 500px;
+  height: auto;
 }
 
-/** Carousel **/
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
+.desc{
+    display: flex;
+    flex-direction: column;
+    background-color: red; 
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height: 50vw;
+    margin: 10px;
+    padding: 20px;
 }
 
-.jcarousel ul {
-    width: 10000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.desc p {
+
+  background-color: white;
+  height: 50 px;
+  width: auto;
 }
-
-.jcarousel li {
-    float: left;
-}
-
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-    position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: yellow;
-    color: pink;
-    text-decoration: none;
-  
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}
-
-.jcarousel-control-prev {
-    left: -50px;
-}
-
-.jcarousel-control-next {
-    right: -50px;
-}
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-    display: block;
-}
-
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-    opacity: .5;
-    cursor: default;
-}
-
-/** Carousel Pagination **/
-
-.jcarousel-pagination {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-}
-
-.jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-    
-    font-size: 11px;
-    line-height: 14px;
-    min-width: 14px;
-    
-    background: #fff;
-    color: #4E443C;
-    border-radius: 14px;
-    padding: 3px;
-    text-align: center;
-    
-    margin-right: 2px;
-    
-    opacity: .75;
-}
-
-.jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-}
-
 
 
 /*
-* === FOOTER ===
+* === CAROUSEL TEST ===
 */ 
 

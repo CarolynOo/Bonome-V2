@@ -19,7 +19,7 @@
 
     <nav class="navbar">
       <ul>
-        <li><a href="../atelier/views/view-presentation.php">Atelier</a></li>
+        <li><a href="../atelier/controllers/controller-presentation.php">Atelier</a></li>
         
         <li><a href="../eshop/eshop-index.php">Le Shop</a></li>
 

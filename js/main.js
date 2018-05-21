@@ -5,7 +5,7 @@
 var a = $("#slideshow-container").offset().top;
 
 $(document).scroll(function(){
-    if($(this).scrollTop() > 450)
+    if($(this).scrollTop() > 400)
     {   
        $('.navbar').css({"background":"#808080"});
        

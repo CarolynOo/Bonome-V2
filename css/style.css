@@ -20,7 +20,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 /* line 38, ../sass/style.scss */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
   display: block; }
 
 /* line 42, ../sass/style.scss */
@@ -157,22 +157,49 @@ h1 {
   .navbar li a:hover {
     background-color: yellow; }
 
+/* line 188, ../sass/style.scss */
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+  width: 100vw;
+  height: 50px; }
+  /* line 200, ../sass/style.scss */
+  .navbar2 ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; }
+  /* line 208, ../sass/style.scss */
+  .navbar2 li {
+    float: left; }
+  /* line 212, ../sass/style.scss */
+  .navbar2 li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black; }
+  /* line 221, ../sass/style.scss */
+  .navbar2 li a:hover {
+    background-color: yellow; }
+
 /*
 * === slideshow ===
 */
-/* line 193, ../sass/style.scss */
-img {
+/* line 232, ../sass/style.scss */
+#slideshow img {
   width: 100vw;
   height: auto;
   transition: .3s ease-in-out; }
 
-/* line 200, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #box1, #box2, #box3, #box4, #box5 {
   width: 100vw;
   height: 75vh;
   float: left; }
 
-/* line 207, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #slideshow-container {
   width: 100%;
   position: relative;
@@ -180,7 +207,7 @@ img {
   margin: auto;
   transition: all 1s ease; }
 
-/* line 216, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 #slideshow {
   width: 1000%;
   -webkit-animation: slideshow 20s infinite;
@@ -238,7 +265,7 @@ img {
 /*
 * === MASONRY TEST===
 */
-/* line 268, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .masonry {
   -webkit-column-count: 4;
   -moz-column-count: 4;
@@ -253,7 +280,7 @@ img {
   column-gap: 1.5em;
   font-size: .85em; }
 
-/* line 283, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .masonry-item {
   opacity: 1;
   display: inline-block;
@@ -273,24 +300,24 @@ img {
   display: inline-block;
   position: relative; }
 
-/* line 304, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .masonry-item img {
   max-width: 100%; }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 310, ../sass/style.scss */
+  /* line 349, ../sass/style.scss */
   .masonry {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; } }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-  /* line 317, ../sass/style.scss */
+  /* line 356, ../sass/style.scss */
   .masonry {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; } }
 @media only screen and (min-width: 1201px) {
-  /* line 324, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   .masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -299,20 +326,20 @@ img {
 * === OVERLAY===
 */
 /* Conteneur principal */
-/* line 339, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .overlay-image {
   position: relative;
   width: 100%; }
 
 /* Image originale */
-/* line 345, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .overlay-image .image {
   display: block;
   width: 100%;
   height: auto; }
 
 /* Texte original */
-/* line 352, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .overlay-image .text {
   color: #fff;
   font-size: 30px;
@@ -326,7 +353,7 @@ img {
   width: 100%; }
 
 /* Overlay */
-/* line 366, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .overlay-image .hover {
   position: absolute;
   top: 0;
@@ -336,25 +363,25 @@ img {
   transition: .3s ease; }
 
 /* Apparition overlay sur passage souris */
-/* line 376, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .overlay-image:hover .hover {
   opacity: 1; }
 
 /***Hover background ***/
-/* line 382, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 .overlay-image .normal {
   transition: .5s ease; }
 
-/* line 385, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 .overlay-image:hover .normal {
   opacity: 1; }
 
-/* line 388, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .overlay-image .hover {
   background-color: rgba(0, 0, 0, 0.5); }
 
 @media only screen and (max-width: 320px) {
-  /* line 393, ../sass/style.scss */
+  /* line 432, ../sass/style.scss */
   .masonry {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -362,15 +389,15 @@ img {
 /*
 * === ATELIER PRESENTATION ===
 */
-/* line 406, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 html, body, #page-one, #page-two, #page-three, #page-four {
   height: 100vh; }
 
-/* line 410, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 #page-one, #page-two, #page-three, #page-four {
   padding-top: 0.5em; }
 
-/* line 414, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 #mainNav {
   background-color: #668AE4;
   color: orange;
@@ -385,43 +412,43 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   z-index: 1000;
   display: flex; }
 
-/* line 431, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 #mainNav a, #mainNav a:link, #mainNav a:visited, #mainNav a:hover, #mainNav a:active {
   color: lightgreen;
   text-decoration: none;
   display: inline-block;
   padding: 0 1em; }
-/* line 437, ../sass/style.scss */
+/* line 476, ../sass/style.scss */
 #mainNav a:hover {
   color: #4861A2; }
 
-/* line 440, ../sass/style.scss */
-h2 {
+/* line 479, ../sass/style.scss */
+#mainNav h2 {
   font-size: 2em;
   padding-top: 1.5em;
   text-align: center;
   font-family: 'Press Start 2P', cursive; }
 
-/* line 448, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 #page-one {
   background-color: #fff; }
 
-/* line 449, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 #page-two {
   background-color: #ccc; }
 
-/* line 450, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 #page-three {
   background-color: #aaa; }
 
-/* line 451, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 #page-four {
   background-color: #888; }
 
 /*
 * === SCROLL BUTTON ===
 */
-/* line 457, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .button {
   background-color: #4CAF50;
   /* Green */
@@ -438,13 +465,13 @@ h2 {
   display: flex;
   justify-content: center; }
 
-/* line 474, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 .arrow {
   text-align: center;
   margin: 8% 0;
   color: pink; }
 
-/* line 480, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 .fas {
   color: yellow; }
 
@@ -454,20 +481,20 @@ h2 {
 /*
 * === COMPETENCES ===
 */
-/* line 508, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .flexContainer {
   display: flex; }
 
-/* line 511, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .flexSpaceAround {
   justify-content: space-around; }
 
-/* line 514, ../sass/style.scss */
+/* line 553, ../sass/style.scss */
 .subContainer {
   width: 80%;
   margin: 0 auto; }
 
-/* line 518, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .col {
   width: 32%;
   border: 1px solid #777777;
@@ -478,12 +505,12 @@ h2 {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 532, ../sass/style.scss */
+/* line 571, ../sass/style.scss */
 .wrapper {
   height: 70 vw;
   width: 70 vh; }
 
-/* line 537, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .contactform {
   display: block;
   position: relative;
@@ -495,7 +522,7 @@ h2 {
   overflow: hidden;
   opacity: 1; }
 
-/* line 549, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 .formulaire {
   display: block;
   position: relative;
@@ -503,7 +530,7 @@ h2 {
   margin: auto;
   padding: 3em 0; }
 
-/* line 557, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .contactform .formulaire p {
   padding: 0.5em;
   color: #313C40;
@@ -512,7 +539,7 @@ h2 {
   font-weight: 300 !important;
   font-size: 1em; }
 
-/* line 566, ../sass/style.scss */
+/* line 605, ../sass/style.scss */
 .contactform h2 {
   padding: 1em 0.5em 1.5em 0.5em;
   position: relative;
@@ -523,7 +550,7 @@ h2 {
   font-weight: 300 !important;
   font-size: 1.1em; }
 
-/* line 577, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -533,7 +560,7 @@ textarea {
   border: 1px solid #fff;
   color: #313C40; }
 
-/* line 587, ../sass/style.scss */
+/* line 626, ../sass/style.scss */
 input[type="text"]:hover,
 input[type="email"]:hover,
 textarea:hover {
@@ -541,7 +568,7 @@ textarea:hover {
   background-color: rgba(49, 61, 64, 0.3);
   color: #313C40; }
 
-/* line 595, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 input[type="submit"] {
   width: 100px;
   height: 20px;
@@ -550,133 +577,59 @@ input[type="submit"] {
   border: 1px solid #313C40;
   color: #313C40; }
 
-/* line 604, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 input[type="submit"]:hover {
   background-color: #313C40;
   color: #fff; }
 
 /*
-* === PROJETS CAROUSEL===
+* === PROJETS ===
 */
-/* line 615, ../sass/style.scss */
-.jcarousel img {
-  width: 200px;
-  height: 200px; }
+/* line 655, ../sass/style.scss */
+.container-projets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: yellow;
+  height: 100vh;
+  justify-content: space-around; }
 
-/* line 620, ../sass/style.scss */
-.jcarousel-wrapper {
-  margin: 20px auto;
-  position: relative;
-  border: 10px solid #fff;
-  width: 200px;
-  height: 200px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999; }
+/* line 666, ../sass/style.scss */
+.container-projets h2 {
+  margin: 0 auto; }
 
-/* line 635, ../sass/style.scss */
-.jcarousel-wrapper .photo-credits {
-  position: absolute;
-  right: 15px;
-  bottom: 0;
-  font-size: 13px;
-  color: #fff;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-  opacity: .66; }
+/* line 672, ../sass/style.scss */
+.carousel {
+  background-color: blue;
+  border-color: black;
+  width: 50vw;
+  height: 50vw;
+  margin: 10px;
+  text-align: center; }
 
-/* line 645, ../sass/style.scss */
-.jcarousel-wrapper .photo-credits a {
-  color: #fff; }
+/* line 682, ../sass/style.scss */
+.carousel img {
+  width: 500px;
+  height: auto; }
 
-/** Carousel **/
-/* line 651, ../sass/style.scss */
-.jcarousel {
-  position: relative;
-  overflow: hidden; }
+/* line 688, ../sass/style.scss */
+.desc {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  height: 50vw;
+  margin: 10px;
+  padding: 20px; }
 
-/* line 656, ../sass/style.scss */
-.jcarousel ul {
-  width: 10000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-/* line 664, ../sass/style.scss */
-.jcarousel li {
-  float: left; }
-
-/** Carousel Controls **/
-/* line 670, ../sass/style.scss */
-.jcarousel-control-prev,
-.jcarousel-control-next {
-  position: absolute;
-  top: 200px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: yellow;
-  color: pink;
-  text-decoration: none;
-  font: 24px/27px Arial, sans-serif;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999; }
-
-/* line 690, ../sass/style.scss */
-.jcarousel-control-prev {
-  left: -50px; }
-
-/* line 694, ../sass/style.scss */
-.jcarousel-control-next {
-  right: -50px; }
-
-/* line 698, ../sass/style.scss */
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-  display: block; }
-
-/* line 703, ../sass/style.scss */
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-  opacity: .5;
-  cursor: default; }
-
-/** Carousel Pagination **/
-/* line 711, ../sass/style.scss */
-.jcarousel-pagination {
-  position: absolute;
-  bottom: 0;
-  left: 15px; }
-
-/* line 717, ../sass/style.scss */
-.jcarousel-pagination a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  line-height: 14px;
-  min-width: 14px;
-  background: #fff;
-  color: #4E443C;
-  border-radius: 14px;
-  padding: 3px;
-  text-align: center;
-  margin-right: 2px;
-  opacity: .75; }
-
-/* line 736, ../sass/style.scss */
-.jcarousel-pagination a.active {
-  background: #4E443C;
-  color: #fff;
-  opacity: 1;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
+/* line 700, ../sass/style.scss */
+.desc p {
+  background-color: white;
+  height: 50 px;
+  width: auto; }
 
 /*
-* === FOOTER ===
+* === CAROUSEL TEST ===
 */
