@@ -12,51 +12,51 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
 /*
 * === VARIABLES ===
@@ -99,17 +99,17 @@ a{
 
 /* unvisited link */
 a:link {
-	color: blue;
+	color: white;
 }
 
 /* visited link */
 a:visited {
-	color: #44bd32;
+	color: f3c741;
 }
 
 /* mouse over link */
 a:hover {
-	color: red;
+	color: grey;
 }
 
 /* selected link */
@@ -193,7 +193,7 @@ h1{
   background-color: #808080;
   width: 100vw;
   height:50px;
- 
+
 
   
 
@@ -211,7 +211,6 @@ h1{
 
   li a {
     display: block;
-    
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -219,7 +218,7 @@ h1{
   }
 
   li a:hover {
-    background-color: yellow;
+    color: yellow;
   }
 }
 
@@ -451,15 +450,12 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 }
 
 #mainNav {
-  background-color: #668AE4;
-  color: orange;
+  background-color: transparent;
   line-height:4em;
   padding:0;
-  position:fixed; 
   top: 0em; 
   width:100%; 
   justify-content: center;
-  position: fixed;
   top : 0px;
   z-index: 1000;
   display:flex;
@@ -468,17 +464,17 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 
 #mainNav {
   a, a:link, a:visited, a:hover, a:active {
-    color: lightgreen; 
+
     text-decoration:none;
     display:inline-block;
     padding:0 1em;
   }
-  a:hover {color: #4861A2;}
+  
 }
 
 #mainNav h2 {
   font-size:2em; 
-  padding-top:1.5em; 
+  padding-top:2em; 
   text-align:center;
   font-family: 'Press Start 2P', cursive;
 
@@ -487,56 +483,117 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 #page-one {background-color:#fff;}
 #page-two {background-color:#ccc;}
 #page-three {background-color:#aaa;}
-#page-four {background-color:#888;}
+
 
 /*
 * === SCROLL BUTTON ===
 */
 
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50%;
-    display:flex;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display:flex;
   justify-content: center;
 }
 
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+
   color: pink;
 }
 
 .fas {
-color: yellow;
+  color: yellow;
 }
 
 
-// @keyframes bounce {
-//   0%, 20%, 50%, 80%, 100% {
-//     transform: translateY(0);
-//   }
-//   40% {
-//     transform: translateY(-30px);
-//   }
-//   60% {
-//     transform: translateY(-15px);
-//   }
-// }
 
 /*
 * === PRESENTATION ===
 */
 
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.flexContainer h2{
+
+  padding: 10px;
+}
+
+
+
+.col {
+  width: auto;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  background: white;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.main h2{
+   text-align: center;
+   font-weight: bold;
+}
+
+.boys {
+  width: 20vw;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  margin:20px;
+}
+
+
+.presentation {
+  width: 60vw;
+  border: 1px solid #777777;
+  border-radius: 8px;
+  background: white;
+  padding: 40px;
+  text-align: center;
+  margin:20px;
+}
+
+
+.adjectif{
+  width: 30%;
+  height: 40vh;
+   border: 1px solid #777777;
+  border-radius: 8px;
+
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  overflow: hidden;
+  font-size: smaller;
+}
+
+.adjectif:nth-child(-n+3){
+ 
+  margin-right:10px;
+}
+
+.col img {
+
+  width: 30px;
+}
 
 
 
@@ -544,24 +601,23 @@ color: yellow;
 * === COMPETENCES ===
 */
 
-.flexContainer {
-    display: flex;
-}
-.flexSpaceAround {
-    justify-content: space-around;
-}
-.subContainer {
-    width: 80%;
-    margin: 0 auto;
-}
-.col {
-    width: 32%;
-    border: 1px solid #777777;
-    border-radius: 8px;
-    background: white;
-    padding: 20px;
+
+@media screen and (max-width: 780px) {
+.flexContainer{
+ display: block;
+ justify-content: center;
+ }
+
+#mainNav{
+  display: block;
 }
 
+.col img{
+
+  width: 10vw;
+}
+
+}
 
 /*
 * ===  FORMULAIRE ===
@@ -646,55 +702,54 @@ input[type="submit"]:hover {
 }
 
 
-
-
 /*
 * === PROJETS ===
 */ 
 
 .container-projets{
  display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: yellow; 
-  height: 100vh;
+ flex-direction: row;
+ justify-content: center;
+ background-color: white; 
+ height: 100vh;
 
-    justify-content: space-around;
+ justify-content: space-around;
 
 }
 
 .container-projets h2{
 
   margin: 0 auto;
+  font-weight: bold;
 }
 
 
 .carousel{
-background-color: blue; 
-border-color: black;
-width: 50vw;
-height: 50vw;
-margin: 10px;
-text-align: center;
+  background-color: white; 
+  border-color: black;
+  width: 60vw;
+  height: 50vw;
+  margin: 10px;
+  text-align: center;
 
 }
 
 .carousel img{
 
-  width: 500px;
+  width: 50vw;
   height: auto;
 }
 
 .desc{
-    display: flex;
-    flex-direction: column;
-    background-color: red; 
-    display: flex;
-    justify-content: space-around;
-    width: 50vw;
-    height: 50vw;
-    margin: 10px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+  display: flex;
+  justify-content: flex-start;
+  width: 40vw;
+  height: 50vw;
+  margin: 10px;
+  padding: 20px;
 }
 
 .desc p {
@@ -702,10 +757,25 @@ text-align: center;
   background-color: white;
   height: 50 px;
   width: auto;
+  margin-top: 30px;
+}
+
+.next{
+  display: flex;
+  text-align: center;
+  padding-top: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
 
+
 /*
-* === CAROUSEL TEST ===
+* === ICONES ===
 */ 
 
+.far fa-trash-alt{
+
+  color:blue;
+}

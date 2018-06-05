@@ -19,9 +19,9 @@
 
     <nav class="navbar">
       <ul>
-        <li><a href="../atelier/controllers/controller-presentation.php">Atelier</a></li>
+        <li><a href="../atelier/presentation/index.php">Atelier</a></li>
         
-        <li><a href="../eshop/eshop-index.php">Le Shop</a></li>
+        <li><a href="../eshop/index.php">Le Shop</a></li>
 
       </ul>
     </nav>
@@ -30,15 +30,15 @@
 
     <div id="slideshow-container">
       <div id="slideshow">
-        <div id="box1">  <img src="../img/fake-meubles/resize/5.jpg"/></div>
+        <div id="box1">  <img src="../img/bonome01.jpg"/></div>
 
-        <div id="box2">  <img src="../img/fake-meubles/resize/5.jpg"/></div>
+        <div id="box2">  <img src="../img/bocal02.jpg"/></div>
 
-        <div id="box3">  <img src="../img/fake-meubles/resize/8.jpg"/></div>
+        <div id="box3">  <img src="../img/amis06.jpg"/></div>
 
-        <div id="box4">  <img src="../img/fake-meubles/resize/1.jpg"/></div>
+        <div id="box4">  <img src="../img/dior08.jpg"/></div>
 
-        <div id="box5">  <img src="../img/fake-meubles/resize/2.jpg"/></div>
+        <div id="box5">  <img src="../img/affiche03.jpg"/></div>
       </div>
     </div>
   </header>

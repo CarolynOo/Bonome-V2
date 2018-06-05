@@ -7,7 +7,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);
    $requser = $bdd->prepare('SELECT * FROM user WHERE id = ?');
    $requser->execute(array($getid));
-   $userinfo = $requser->fetch();
+   $userinfo = $requser->fetch();}
 ?>
 
 
@@ -20,9 +20,9 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
       <div align="center">
          <h2>Profil de <?php echo $userinfo['first_name']; ?></h2>
          <br /><br />
-         Pseudo = <?php echo $userinfo['first_name']; ?>
+        Prénom = <?php echo $userinfo['first_name']; ?>
          <br />
-         Mail = <?php echo $userinfo['email']; ?>
+         Adresse Mail = <?php echo $userinfo['email']; ?>
          <br />
          <?php
          if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
@@ -36,4 +36,3 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
       </div>
    </body>
 </html>  
-}

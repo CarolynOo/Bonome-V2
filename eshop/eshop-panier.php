@@ -10,6 +10,8 @@ require 'eshop-connexiondb.php';
   <title>Eshop Bonome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="../js/jquery-3.3.1.min.js"></script>
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/eshop-style.css" />
 
 </head>
@@ -57,7 +59,7 @@ require 'eshop-connexiondb.php';
                   
 
                     <tr>
-                     <td> <img class="imgproduct" src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg"> </td>
+                     <td> <img class="imgproduct" src="../img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg"> </td>
 
                      <td class="name"><?= $product->product_name; ?></td>
 
@@ -69,7 +71,7 @@ require 'eshop-connexiondb.php';
 
                     <td class="action">
 
-                     <a href="eshop-panier.php?delPanier=<?= $product->id; ?>" class="del"><img class="icon" src="img/trash-icon.png"></a>
+                     <a href="eshop-panier.php?delPanier=<?= $product->id; ?>" class="del"> <i class="fas fa-trash-alt"></i></a>
                     </tr>
                                     
                    

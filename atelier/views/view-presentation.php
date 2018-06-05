@@ -16,7 +16,7 @@
 <body>
 
   <header>
-    <main class="main">
+  
 
       <nav id="mainNav">
         <a class="" href="../index.php">Projets</a>|
@@ -30,45 +30,68 @@
     </header>
 
     <!--PRESENTATION ATELIER-->
+
+      <main class="main">
     <div id="page-one">
       <h2>Présentation Bonome</h2>
 
+     
+    
+<div class="flexContainer">
+    <div class="boys">
+        <img src="../../img/aubin.png" alt="aubin">
+       <h2>Aubin</h2>
+</div>
 
-<div class="flexContainer flexSpaceAround">
-    <div class="col">
-       <h1>Aubin</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta eius, excepturi neque laboriosam, laudantium cumque iste deleniti aut numquam sed quasi error suscipit dolore aperiam deserunt est aspernatur architecto?               </div>
-    <div class="col">
-       <h1>François</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi labore, autem consequuntur delectus sapiente, omnis sit rem, laudantium sint necessitatibus error repellendus ipsum non illo! Id, culpa, doloribus!  </div>
+  <div class="presentation">
+        <p>Né de l’association de deux personnes aux sensibilités différentes, Bonome tire partie des différentes natures complémentaires de
+ses créateurs.
+<br><br>
+Forts de leurs différentes expériences acquises, ces deux là ont décidé d'allier leurs compétences pour proposer leur propre vision
+de l'architecture et du design, une alternative vouée à accompagner le client dans la réalisation de son idée, d'une simple envie à
+un projet abouti. </p> 
+      
+</div>
+    <div class="boys">
+
+        <img  src="../../img/francois.png" alt="francois">
+       <h2>François</h2>
+</div>
   
 
 </div>
 
-<div class="flexContainer flexSpaceAround">
-    <div class="col">
-       <h1>BLABLA</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta eius, excepturi neque laboriosam, laudantium cumque iste deleniti aut numquam sed quasi error suscipit dolore aperiam deserunt est aspernatur architecto?               </div>
-    <div class="col">
-       <h1>BLiBLi</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi labore, autem consequuntur delectus sapiente, omnis sit rem, laudantium sint necessitatibus error repellendus ipsum non illo! Id, culpa, doloribus!   </div>           
+ 
 
-    <div class="col">
-       <h1>BLuBLu</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi labore, autem consequuntur delectus sapiente, omnis sit rem, laudantium sint necessitatibus error repellendus ipsum non illo! Id, culpa, doloribus!              </div>
+<div class="flexContainer">
+    <div class="adjectif">
+      <img src="../../img/curieux.png" alt="curieux">
+       <h2>Curieux</h2>
+<p>Il sait écouter pour mieux concrétiser vos envies.   </p>          </div>
 
-  <div class="col">
-       <h1>BLoBLo</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi labore, autem consequuntur delectus sapiente, omnis sit rem, laudantium sint necessitatibus error repellendus ipsum non illo! Id, culpa, doloribus!              </div>
-  
+    <div class="adjectif">
+       <img src="../../img/inventif.png" alt="inventif">
+       <h2>Inventif</h2>
+<p>Il saura allier simplicité et technicité dans
+des projets au plus proche de l'utilisateur.   </p></div>           
 
-  
+    <div class="adjectif">
+       <img src="../../img/consciencieux.png" alt="consciencieux">
+       <h2>Consciencieux</h2>
+<p>Il vous accompagnera tout au long de vos projets,
+vous apportant conseil et créativité.   </p>           </div>
 
+  <div class="adjectif">
+        <img src="../../img/multiple.png" alt="multiple">
+       <h2>Multiple</h2>
+<p>Fort des compétences de ses deux fondateurs: Aubin et François</p></div>
+ 
 </div>
-
- <div class="arrow"> <a i class="fa fa-arrow-down fa-2x js-scrollTo" href="#page-two"></a> </div>
+<div class="arrow"><a i class="fa fa-arrow-down fa-2x js-scrollTo" href="#page-two"></a> </div>
 
     </div>
+
+
     <!--/PRESENTATIONS ATELIER-->
 
 
@@ -76,24 +99,33 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi lab
 
     <!--PRESENTATION COMPETENCES-->
     <div id="page-two">
+
       <h2>Compétences</h2>
+   
 
+<div class="flexContainer">
 
+    <div class="competence">
+      <img src="../../img/archi.png" alt="archi">
+       <h2>Architecture</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quia quod iste cumque debitis numquam saepe, veniam error. Perferendis nulla nam alias id minus iure optio error voluptatem accusantium facilis!</p>
+    </div>
 
-<div class="flexContainer flexSpaceAround">
-    <div class="col">
-       <h1>Architecture</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem soluta eius, excepturi neque laboriosam, laudantium cumque iste deleniti aut numquam sed quasi error suscipit dolore aperiam deserunt est aspernatur architecto?               </div>
-    <div class="col">
-       <h1>Design</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam eligendi labore, autem consequuntur delectus sapiente, omnis sit rem, laudantium sint necessitatibus error repellendus ipsum non illo! Id, culpa, doloribus!              </div>
-    <div class="col">
-        <h1>Graphisme</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sunt consequatur doloribus, sequi commodi id quia culpa voluptate qui nisi, nesciunt tenetur fuga molestias odio. Sapiente repellendus tempore, commodi veritatis?            </div>
+    <div class="competence">
+       <img src="../../img/design.png" alt="design">
+       <h2>Design</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste debitis distinctio expedita officia a quo repellendus, omnis accusamus, maxime consequatur illum. Laudantium nesciunt quas numquam? Natus doloremque libero excepturi iusto!</p>
+      </div>
+
+    <div class="competence">
+       <img src="../../img/graphisme.png" alt="graphisme">
+        <h2>Graphisme</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut dicta iste officiis debitis eveniet iusto sapiente, exercitationem, a, labore, aperiam vero repellat soluta ullam vel excepturi sit ducimus minima?</p>
+    </div>
 </div>
 
 
-<div class="arrow bounce">
+<div class="arrow">
   <a class="fa fa-arrow-down fa-2x js-scrollTo" href="#page-three"></a>
 </div>
 
@@ -103,13 +135,18 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sunt consequatur d
     <!--FORMULAIRE DE CONTACT-->
     <div id="page-three">
       <h2>Contact</h2>
-    
+      <div class="flexContainer">
+     
+
+         <div class="presentation">
+         <p>Une idée, un projet en tête, une rencontre ? N'hésitez pas...</p>
+</div>
       <div id="wrapper">
 
       <div class="contactform" id="down">
         <div class="formulaire">
 
-          <h2>Une idée, un projet en tête, une rencontre ? N'hésitez pas...</h2>
+       
 
           <div id="form_contact">
             <form action="process.php" id="contact" method="POST">
@@ -120,7 +157,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sunt consequatur d
               </p>
               <p>
                 <label for="sujet" class="sujet">Sujet</label>
-                <br /><input id="sujet" name="sujet" type="text" size="80">
+                <br /><input id="sujet" name="sujet" type="text" size="280">
                 <span id="msg_sujet"></span>
               </p>
               <p>
@@ -143,19 +180,19 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sunt consequatur d
         </div>
       </div>
     </div>
+</div>
+</div>
+</main>
 
 
     <!--/FORMULAIRE DE CONTACT-->
 
-  </main>
+
   <script src="../../js/presentation.js"></script>
   <script src="../../js/masonry.pkgd.min.js"></script>
 
-
-
 </body>
 </html>
-
 
 
 

@@ -1,3 +1,6 @@
+
+
+
 <?php require 'eshop-header.php'; ?>
 
 <!--AFFICHAGE PRODUITS-->

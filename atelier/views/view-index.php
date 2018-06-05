@@ -10,13 +10,13 @@ ob_start();
 <div class="masonry">
     <div class="masonry-item">
 <div class="overlay-image">
- <a href="atelier-projets.html">
-  <img class="image" src="../img/fake-meubles/resize/medium/1.jpg" alt="Alt text" />
+ <a href="projets/?id=1">
+  <img class="image" src="../img/amis01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 1</div>
+   <div class="text">Atelier Des Amis</div>
   </div>
  </a>
 </div>
@@ -25,13 +25,13 @@ ob_start();
 
     <div class="masonry-item">
 <div class="overlay-image">
- <a href="#">
-  <img class="image" src="../img/fake-meubles/resize/medium/2.jpg" alt="Alt text" />
+  <a href="projets/?id=2">
+  <img class="image" src="../img/dior01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 2</div>
+   <div class="text">Dior</div>
   </div>
  </a>
 </div>
@@ -39,13 +39,13 @@ ob_start();
 
      <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/3.jpg" alt="Alt text" />
+  <a href="projets/?id=3">
+  <img class="image" src="../img/eclaireur03.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 3</div>
+   <div class="text">Eclaireur</div>
   </div>
  </a>
 </div>
@@ -53,13 +53,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/4.jpg" alt="Alt text" />
+ <a href="projets/?id=4">
+  <img class="image" src="../img/gru01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 4</div>
+   <div class="text">Gru</div>
   </div>
  </a>
 </div>
@@ -67,13 +67,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/5.jpg" alt="Alt text" />
+ <a href="projets/?id=5">
+  <img class="image" src="../img/richard01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 5</div>
+   <div class="text">Richard</div>
   </div>
  </a>
 </div>
@@ -81,13 +81,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/6.jpg" alt="Alt text" />
+ <a href="projets/?id=6">
+  <img class="image" src="../img/woody12.png" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 6</div>
+   <div class="text">Woody</div>
   </div>
  </a>
 </div>
@@ -95,13 +95,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/7.jpg" alt="Alt text" />
+ <a href="projets/?id=7">
+  <img class="image" src="../img/affiche03.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 7</div>
+   <div class="text">Affiche</div>
   </div>
  </a>
 </div>
@@ -109,19 +109,31 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="URL_LIEN">
-  <img class="image" src="../img/fake-meubles/resize/medium/8.jpg" alt="Alt text" />
+ <a href="projets/?id=8">
+  <img class="image" src="../img/bocal01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Description image 8</div>
+   <div class="text">Bocal</div>
   </div>
  </a>
 </div>
  </div>
 
-
+  <div class="masonry-item">
+<div class="overlay-image">
+ <a href="projets/?id=9">
+  <img class="image" src="../img/bonome01.jpg" alt="Alt text" />
+  <div class="normal">
+   <div class="text"></div>
+  </div>
+  <div class="hover">
+   <div class="text">Bonome</div>
+  </div>
+ </a>
+</div>
+ </div>
 
 
  </div>

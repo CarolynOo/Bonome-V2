@@ -10,6 +10,7 @@ require 'eshop-connexiondb.php';
   <title>Eshop Bonome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/fontawesome-all.css" />
   <script src="../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="../css/eshop-style.css" />
 
@@ -21,7 +22,11 @@ require 'eshop-connexiondb.php';
     <nav class="navbar">
       <ul>
       
-        <li><a href="eshop-index.php">Le Shop</a></li>
+        <li><a href="eshop-index.php">Le Shop Old</a></li>
+
+        <li><a href="../atelier/index.php">Bonome</a></li>
+        
+        <li><a href="../eshop/index.php">Le Shop MVC</a></li>
 
       </ul>
     </nav>
