@@ -21,7 +21,7 @@
       <ul>
         <li><a href="../atelier/presentation/index.php">Atelier</a></li>
         
-        <li><a href="../eshop/index.php">Le Shop</a></li>
+        <li><a href="../eshop/eshop-index.php">Le Shop</a></li>
 
       </ul>
     </nav>

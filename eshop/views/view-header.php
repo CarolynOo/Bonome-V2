@@ -58,7 +58,7 @@ require __DIR__.'/../model/model-connexiondb.php';
                   
 
                     <tr>
-                     <td> <img class="imgproduct" src="img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg"> </td>
+                     <td> <img class="imgproduct" src="../../img/produits/<?= $product->id; ?>.jpg"> </td>
 
                      <td class="name"><?= $product->product_name; ?></td>
 
@@ -70,7 +70,7 @@ require __DIR__.'/../model/model-connexiondb.php';
 
                     <td class="action">
 
-                     <a href="../eshop/controller/controller-panier.php?delPanier=<?= $product->id; ?>" class="del"><img class="icon" src="img/trash-icon.png"></a>
+                     <a href="../eshop/controller/controller-panier.php?delPanier=<?= $product->id; ?>" class="del"><img class="icon" src="../../img/trash-icon.png"></a>
                     </tr>
                                     
                    
@@ -97,7 +97,7 @@ require __DIR__.'/../model/model-connexiondb.php';
 
     <div id="footer">
 
-        <p>© Bonome - 2018</p>
+      
 
     </div>
 </footer>

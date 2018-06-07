@@ -1,0 +1,158 @@
+/*
+* === NEWPRESENTATION ===
+*/
+
+#mainNav{
+  // width:1vw;
+  // height: 5vh;
+  text-align: center;
+
+}
+
+.container{
+
+  display:flex;
+   flex-direction: column;
+ -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+    width: 0%;
+
+
+
+}
+
+#page-one{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  width: 95vw;
+  height: 95vh;
+  text-align: center;
+
+h2{
+
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+}
+
+#page-two, #page-three{
+
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 95vw;
+  height: 100vh;
+text-align: center;
+
+  h2{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top:10px;
+  }
+}
+
+#page-one{background-color: green;} 
+#page-two{background-color: blue;} 
+#page-three{background-color: red;} 
+
+.garcons{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  background-color: yellow;
+
+    img{
+      height: 100px;
+    }
+}
+.aubin{
+  background-color: orange;
+}
+
+.francois{
+  background-color: grey;
+}
+
+.qualite{
+   display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+    background-color: purple;
+}
+
+
+
+.adjectifs{
+  display: flex;
+   flex-direction:column;
+   justify-content:space-around;
+   align-items: center;
+   width: 30%;
+   height: auto;
+
+img{
+  width:50px;
+}
+
+}
+
+.competences{
+   display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+    background-color: lightblue;
+    align-items: center;
+    
+}
+
+.skill{
+
+
+   display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+    background-color: lightblue;
+    align-items: center;
+    height: 70vh;
+
+    img{
+  height:200px;
+}
+}
+
+
+.arrow{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+.container{
+display: block;
+flex-direction: column;
+ align-items: center;
+     font-size: 0.9 rem;
+      
+ }
+
+
+
+
+.garcons{
+ display: flex;
+ flex-direction:column;
+  align-items: center;
+}
+
+
+}

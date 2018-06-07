@@ -1,13 +1,8 @@
-
-
-
 <?php require 'eshop-header.php'; ?>
 
 <!--AFFICHAGE PRODUITS-->
 
 <main>
-
-  <h1> Les Produits</h1>
 
   <div class="home">
 
@@ -19,7 +14,7 @@
 
       <div class="masonry">
         <div class="item">
-         <img src="../img/fake-meubles/resize/medium/<?= $product->id; ?>.jpg">
+         <img src="../img/produits/<?= $product->id; ?>.jpg">
          <div class="description">
           <?= $product->product_name; ?>
           <a href="#" class="price"><?= number_format($product->price,2,',',' '); ?> €</a>

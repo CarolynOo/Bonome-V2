@@ -7,7 +7,7 @@ var a = $("#slideshow-container").offset().top;
 $(document).scroll(function(){
     if($(this).scrollTop() > 215)
     {   
-       $('.navbar').css({"background":"yellow"});
+       $('.navbar').css({"background": "#f3c741"});
        
 
     } else {

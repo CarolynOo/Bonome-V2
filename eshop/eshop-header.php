@@ -11,7 +11,7 @@ require 'eshop-connexiondb.php';
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link rel="stylesheet" type="text/css" media="screen" href="../css/fontawesome-all.css" />
-  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="../css/eshop-style.css" />
 
 </head>
@@ -22,11 +22,13 @@ require 'eshop-connexiondb.php';
     <nav class="navbar">
       <ul>
       
-        <li><a href="eshop-index.php">Le Shop Old</a></li>
+      
 
         <li><a href="../atelier/index.php">Bonome</a></li>
         
         <li><a href="../eshop/index.php">Le Shop MVC</a></li>
+
+         <li><a href="../eshop/eshop-panier.php">Consulter Panier</a></li>
 
       </ul>
     </nav>
@@ -35,15 +37,15 @@ require 'eshop-connexiondb.php';
 
     <div id="slideshow-container">
       <div id="slideshow">
-        <div id="box1">  <img src="../img/fake-meubles/resize/1.jpg"/></div>
+        <div id="box1">  <img src="../img/produits/1.jpg"/></div>
 
-        <div id="box2">  <img src="../img/fake-meubles/resize/5.jpg"/></div>
+        <div id="box2">  <img src="../img/produits/2.jpg"/></div>
 
-        <div id="box3">  <img src="../img/fake-meubles/resize/8.jpg"/></div>
+        <div id="box3">  <img src="../img/produits/11.jpg"/></div>
 
-        <div id="box4">  <img src="../img/fake-meubles/resize/4.jpg"/></div>
+        <div id="box4">  <img src="../img/produits/2.jpg"/></div>
 
-        <div id="box5">  <img src="../img/fake-meubles/resize/5.jpg"/></div>
+        <div id="box5">  <img src="../img/produits/12.jpg"/></div>
       </div>
     </div>
   </header>

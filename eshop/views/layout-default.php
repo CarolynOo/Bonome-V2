@@ -20,9 +20,13 @@
 
         <li><a href="eshop-index.php">Le Shop Old</a></li>
 
-        <li><a href="../atelier/index.php">Bonome</a></li>
+        <li><a href="../../../atelier/index.php">Bonome</a></li>
         
-        <li><a href="../eshop/index.php">Le Shop MVC</a></li>
+        <li><a href="../../index.php">Le Shop MVC</a></li>
+
+        <li><a href="../eshop/views/view-inscriptionform.php">Créer un compte</a></li>
+
+          <li><a href="../eshop/views/view-connexionuser.php">Se connecter</a></li>
 
       </ul>
     </nav>
@@ -31,13 +35,13 @@
       <div id="slideshow">
         <div id="box1">  <img src="../img/produits/1.jpg"/></div>
 
-        <div id="box2">  <img src="../img/produits/5.jpg"/></div>
+        <div id="box2">  <img src="../img/produits/2.jpg"/></div>
 
         <div id="box3">  <img src="../img/produits/11.jpg"/></div>
 
         <div id="box4">  <img src="../img/produits/2.jpg"/></div>
 
-        <div id="box5">  <img src="../img/produits/11.jpg"/></div>
+        <div id="box5">  <img src="../img/produits/12.jpg"/></div>
       </div>
     </div>
   </header>
@@ -49,7 +53,7 @@
       <p>© Bonome - 2018</p>
 
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-      <script type="text/javascript" src="../js/app.js"></script>
+      <script type="text/javascript" src="../../js/app.js"></script>
       <script src="../js/main-eshop.js"></script>
       <script src="../js/masonry.pkgd.min.js"></script>
 

@@ -1,0 +1,133 @@
+/*
+* === NEWPRESENTATION ===
+*/
+/* line 5, ../sass/newprez.scss */
+#mainNav {
+  text-align: center; }
+
+/* line 12, ../sass/newprez.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  width: 0%; }
+
+/* line 25, ../sass/newprez.scss */
+#page-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 95vw;
+  height: 95vh;
+  text-align: center; }
+  /* line 33, ../sass/newprez.scss */
+  #page-one h2 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center; }
+
+/* line 42, ../sass/newprez.scss */
+#page-two, #page-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95vw;
+  height: 100vh;
+  text-align: center; }
+  /* line 51, ../sass/newprez.scss */
+  #page-two h2, #page-three h2 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px; }
+
+/* line 59, ../sass/newprez.scss */
+#page-one {
+  background-color: green; }
+
+/* line 60, ../sass/newprez.scss */
+#page-two {
+  background-color: blue; }
+
+/* line 61, ../sass/newprez.scss */
+#page-three {
+  background-color: red; }
+
+/* line 63, ../sass/newprez.scss */
+.garcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: yellow; }
+  /* line 69, ../sass/newprez.scss */
+  .garcons img {
+    height: 100px; }
+
+/* line 73, ../sass/newprez.scss */
+.aubin {
+  background-color: orange; }
+
+/* line 77, ../sass/newprez.scss */
+.francois {
+  background-color: grey; }
+
+/* line 81, ../sass/newprez.scss */
+.qualite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: purple; }
+
+/* line 90, ../sass/newprez.scss */
+.adjectifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: auto; }
+  /* line 98, ../sass/newprez.scss */
+  .adjectifs img {
+    width: 50px; }
+
+/* line 104, ../sass/newprez.scss */
+.competences {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightblue;
+  align-items: center; }
+
+/* line 113, ../sass/newprez.scss */
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: lightblue;
+  align-items: center;
+  height: 70vh; }
+  /* line 123, ../sass/newprez.scss */
+  .skill img {
+    height: 200px; }
+
+/* line 129, ../sass/newprez.scss */
+.arrow {
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 800px) {
+  /* line 140, ../sass/newprez.scss */
+  .container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9 rem; }
+
+  /* line 151, ../sass/newprez.scss */
+  .garcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }

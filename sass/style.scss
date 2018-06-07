@@ -14,6 +14,8 @@
    License: none (public domain)
    */
 
+
+
    html, body, div, span, applet, object, iframe,
    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
    a, abbr, acronym, address, big, cite, code,
@@ -33,6 +35,12 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+
+ 
+  line-height: 1; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
@@ -78,9 +86,6 @@
 // global container class
 
 
-*{
-	box-sizing:border-box;
-}
 
 body{
 	margin:0 auto;
@@ -95,26 +100,12 @@ body{
 a{
 	text-decoration: none;
 	padding-right: 30px;
+  color:#000;
 }
 
-/* unvisited link */
-a:link {
-	color: white;
-}
-
-/* visited link */
-a:visited {
-	color: f3c741;
-}
-
-/* mouse over link */
-a:hover {
-	color: grey;
-}
-
-/* selected link */
-a:active {
-	color: yellow;
+ 
+a:hover { 
+  text-shadow: 0px 0px 4px darkgrey; 
 }
 
 
@@ -173,16 +164,13 @@ h1{
 
 	li a {
 		display: block;
-		
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
-		color: black;
+	
 	}
 
-	li a:hover {
-		background-color: yellow;
-	}
+	
 }
 
 .navbar2{
@@ -217,9 +205,7 @@ h1{
     color: black;
   }
 
-  li a:hover {
-    color: yellow;
-  }
+
 }
 
 
@@ -441,24 +427,21 @@ h1{
 * === ATELIER PRESENTATION ===
 */
 
-html, body, #page-one, #page-two, #page-three, #page-four {
+html, body, #page-one, #page-two, #page-three {
   height:100vh;
 }
 
-#page-one, #page-two, #page-three, #page-four {
+#page-one, #page-two, #page-three{
 	padding-top:0.5em;
 }
 
 #mainNav {
-  background-color: transparent;
-  line-height:4em;
-  padding:0;
-  top: 0em; 
-  width:100%; 
-  justify-content: center;
-  top : 0px;
-  z-index: 1000;
-  display:flex;
+display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #808080;
+    width: 100vw;
+    height: 50px;
 
 }
 
@@ -476,11 +459,12 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   font-size:2em; 
   padding-top:2em; 
   text-align:center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Montserrat', cursive;
 
 }
 
-#page-one {background-color:#fff;}
+#page-one {background-color:#fff;
+padding-top: 20px;}
 #page-two {background-color:#ccc;}
 #page-three {background-color:#aaa;}
 
@@ -489,27 +473,26 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 * === SCROLL BUTTON ===
 */
 
-.button {
-  background-color: black; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
-  display:flex;
-  justify-content: center;
-}
+// .button {
+//   background-color: black; /* Green */
+//   border: none;
+//   color: white;
+//   padding: 20px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+//   margin: 4px 2px;
+//   cursor: pointer;
+//   border-radius: 50%;
+//   display:flex;
+//   justify-content: center;
+// }
 
 
 .arrow {
   text-align: center;
-
-  color: pink;
+  color: blue;
 }
 
 .fas {
@@ -522,10 +505,15 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 * === PRESENTATION ===
 */
 
+.main{
+  display:flex;
+  flex-direction:column;
+}
 
 .flexContainer {
   display: flex;
   justify-content: space-around;
+
  
 }
 
@@ -533,7 +521,6 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 
   padding: 10px;
 }
-
 
 
 .col {
@@ -574,10 +561,28 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 
 .adjectif{
   width: 30%;
-  height: 40vh;
+  height: 35vh;
    border: 1px solid #777777;
   border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  overflow: hidden;
+  font-size: smaller;
+}
 
+
+
+.adjectif:nth-child(-n+3){
+ 
+  margin-right:10px;
+}
+
+.competence{
+   width: 30%;
+  height: 75vh;
+   border: 1px solid #777777;
+  border-radius: 8px;
   padding: 20px;
   text-align: center;
   margin: 20px;
@@ -585,16 +590,35 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   font-size: smaller;
 }
 
-.adjectif:nth-child(-n+3){
- 
-  margin-right:10px;
+.competence img {
+
+  height: 200px;
 }
 
-.col img {
-
-  width: 30px;
+.competence p{
+  text-align: justify;
 }
 
+h3{
+  font-weight: bold;
+  text-align: center;
+  font-style: 2em;
+}
+
+.arrow a{
+  padding-right: 0;
+} 
+
+.flexformulaire{
+  display:flex;
+  flex-direction:column;
+
+
+}
+.question p{
+  text-align: center;
+  padding-top: 40px;
+}
 
 
 /*
@@ -603,13 +627,42 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 
 
 @media screen and (max-width: 780px) {
-.flexContainer{
- display: block;
+
+
+.main{
+
+flex-direction: column;
  justify-content: center;
+   float: none;
+   align-items:center;
+      
  }
 
+html, body, #page-one, #page-two, #page-three {
+  height:100%;
+  background-color: white;
+}
+
+.boys{
+  display:none;
+}
+
+.arrow{
+  display:none;
+}
+
+.adjectif, .competence{
+   width: 60vw;
+    border: 1px solid #777777;
+    border-radius: 8px;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
 #mainNav{
-  display: block;
+  display: none;
 }
 
 .col img{
@@ -617,6 +670,19 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   width: 10vw;
 }
 
+.flexContainer{
+ display:flex;
+flex-direction:column;
+align-items:center;
+  
+  }
+
+.contactform{
+  border: 1px solid #777777;
+    border-radius: 8px;
+    background: white;
+
+}
 }
 
 /*
@@ -634,7 +700,7 @@ html, body, #page-one, #page-two, #page-three, #page-four {
   position:relative;
   margin:10% 5% 2% 5%;
   padding:0 !important;
-  height:600px;
+  height:50vh;
   width:auto;
   border-radius:4px;
   overflow:hidden;
@@ -642,11 +708,12 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 }
 
 .formulaire {
-  display:block;
+  display:flex;
   position:relative;
-  width:40%;
+  width:60%;
   margin:auto;
-  padding:3em 0;
+  align-items:center;
+ padding:3em 0;
 }
 
 .contactform .formulaire p{
@@ -659,13 +726,13 @@ html, body, #page-one, #page-two, #page-three, #page-four {
 }
 
 .contactform h2{
-  padding:1em 0.5em 1.5em 0.5em;
+  padding:1em;
   position:relative;
   margin:0 auto;
   color:#313C40;
   text-align:center;
   font-family:'Lato', sans-serif;
-  font-weight:300 !important;
+  font-weight:bold;
   font-size: 1.1em;
 }
 
@@ -779,3 +846,4 @@ input[type="submit"]:hover {
 
   color:blue;
 }
+
