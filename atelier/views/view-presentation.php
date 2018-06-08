@@ -138,7 +138,7 @@
              </div>
          
    <div class="formulaire">
-           <div id="wrapper">
+          <!--  <div id="wrapper">
             <div class="contactform" id="down">
            
                 <div id="form_contact">
@@ -167,7 +167,51 @@
                       <input type="submit" value="Envoyer" style="" />
                     </p>
                   </form>
-                  <span id="msg_all"></span>
+                  <span id="msg_all"></span> -->
+
+
+<!--NEW FORMULAIRE-->
+
+<form action="../../erreur.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Votre prénom</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname"  placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Nom de famille</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname"  placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Votre ville</label>
+      </div>
+      <div class="col-75">
+       <input type="text" id="ville"  placeholder="">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Votre message</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject"  placeholder="" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Envoyer">
+    </div>
+  </form>
+</div>
+
 
 <div class="arrow">
             <a class="fa fa-arrow-up fa-2x js-scrollTo" href="#page-one"></a>
@@ -175,16 +219,19 @@
 
                 </div>
                 
-               
+               </div>
 
             </div>
           </div>
-          <div>
-        </div>
-        </div>
-
         
-      </div>
+        
+
+
+        <!--NOUVEAU FORMULAIRE-->
+
+         
+
+    
  </main>
 
 

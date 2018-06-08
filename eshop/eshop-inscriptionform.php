@@ -15,27 +15,23 @@
 
 </head>
 <body>
-
+<header>
 	<nav class="navbar4">
       <ul>
 
         <li><a href="eshop-index.php">Le Shop</a></li>
-
-        <li><a href="../atelier/index.php">Bonome</a></li>
-        
-        <li><a href="../eshop/index.php">Le Shop MVC</a></li>
-
          <li><a href="../eshop/eshop-panier.php">Consulter Panier</a></li>
 
        
 
     </ul>
 </nav>
+</header>
 
 <div class="tabconnexion">
 	<div align="center">
 		<h2>Inscription</h2>
-
+<!-- 
 		<form action="" method="POST" >
 
 			<table>
@@ -106,11 +102,89 @@
 			</table>
 			<br>
 				<input type="submit" name="forminscription" value="Création de compte">
-		</form>
+		</form> -->
+
+
+		<!--NOUVEAU FORMULAIRE -->
+
+
+       <div class="container">
+  <form action="" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Prénom</label>
+      </div>
+      <div class="col-75">
+       <input type="text" placeholder="Votre prénom" id="Prénom" name="first_name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Nom de Famille</label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Votre nom" id="nom" name="last_name"/>
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+      <input type="email" placeholder="Votre email" id="email" name="email" />
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="col-25">
+    	<label for="email2">Confirmation Email</label>
+      </div>
+      <div class="col-75">
+    
+      <input type="email" placeholder="Confirmez votre email" id="email" name="email2" />
+      </div>
+    </div>
+
+
+     <div class="row">
+      <div class="col-25">
+        <label for="password">Mot de Passe</label>
+      </div>
+      <div class="col-75">
+       <input type="password" placeholder="Mot de passe" id="password" name="password" />
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="password2"> Confirmation Mot de Passe</label>
+      </div>
+      <div class="col-75">
+       <input type="password" placeholder="Confirmation mot de passe" id="password2" name="password2" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+       <label for="address">Adresse</label>
+      </div>
+      <div class="col-75">
+      <input type="address" placeholder="Votre adresse" id="address" name="address" />
+      </div>
+    </div>
+    
+ 
+    <div class="row">
+      <input type="submit" name="forminscription" value="Création de compte">
+    </div>
+  </form>
+
+		<!--FIN NOUVEAU FORMULAIRE -->
 
 		  <?php
          if(isset($erreur)) {
-            echo '<font color="red">'.$erreur."</font>";
+            echo '<font color="red">'.$erreur.'<a href="eshop-connexion.php"><p>Connectez-vous</p></a>"</font>"' ;
          }
          ?>
 	</div>

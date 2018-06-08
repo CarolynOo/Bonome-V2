@@ -42,7 +42,8 @@ $lastname = htmlspecialchars($_POST['last_name']);
 
                      $insertuser->execute(array($firstname, $lastname, $email, $password, $address));
 
-                     $erreur = "Votre compte a bien été créé !";
+                     $erreur = "Votre compte a bien été créé ! ";
+
                   } 
 
                   else {

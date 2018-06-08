@@ -64,19 +64,18 @@ if(isset($_POST['formconnexion'])) {
         <li><a href="eshop-index.php">Le Shop</a></li>
 
         <li><a href="../atelier/index.php">Bonome</a></li>
-        
-        <li><a href="../eshop/index.php">Le Shop MVC</a></li>
-
-         <li><a href="../eshop/eshop-panier.php">Consulter Panier</a></li>
-
-       
 
     </ul>
+
+      <a style="padding-top: 10px;" href="../eshop/eshop-panier.php">     <i class="fas fa-cart-plus"></i></a>
 </nav>
+   
+   <div class="tabconnexion">
+
    <div align="center">
       <h2>Connexion</h2>
 
-<form action="" method="POST" >
+<!-- <form action="" method="POST" >
 
    <table>
 
@@ -110,6 +109,35 @@ if(isset($_POST['formconnexion'])) {
     
       </form>
        </div>
+       </div> -->
+
+
+       <div class="container">
+  <form action="" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="emailconnect" placeholder="Votre email">
+       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Mot de Passe</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="password" name="passwordconnect" placeholder="Votre mot de passe">
+
+      </div>
+    </div>
+   
+    
+    <div class="row">
+<input type="submit" name="formconnexion" value="Se Connecter">
+    </div>
+  </form>
 
 
         <?php

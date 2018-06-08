@@ -10,7 +10,7 @@ require 'eshop-connexiondb.php';
   <title>Eshop Bonome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" media="screen" href="../css/fontawesome-all.css" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="../../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="../css/eshop-style.css" />
 
@@ -26,11 +26,11 @@ require 'eshop-connexiondb.php';
 
         <li><a href="../atelier/index.php">Bonome</a></li>
         
-        <li><a href="../eshop/index.php">Le Shop MVC</a></li>
+  
 
-         <li><a href="../eshop/eshop-panier.php">Consulter Panier</a></li>
 
       </ul>
+        <a style="padding-top: 10px;" href="../eshop/eshop-panier.php">     <i class="fas fa-cart-plus"></i></a>
     </nav>
 
 

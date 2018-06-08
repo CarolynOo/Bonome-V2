@@ -92,16 +92,20 @@ body {
 a {
   text-decoration: none;
   padding-right: 30px;
-  color: #000; }
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em; }
 
-/* line 113, ../sass/eshop-style.scss */
+/* line 115, ../sass/eshop-style.scss */
 a:hover {
-  text-shadow: 0px 0px 9px #777; }
+  text-shadow: 0px 0px 9px #777;
+  font-weight: bold;
+  color: white; }
 
 /* unvisited link */
 /* visited link */
 /* mouse over link */
-/* line 132, ../sass/eshop-style.scss */
+/* line 136, ../sass/eshop-style.scss */
 h1 {
   text-align: center;
   color: black;
@@ -110,14 +114,14 @@ h1 {
   font-weight: bold; }
 
 /*images*/
-/* line 141, ../sass/eshop-style.scss */
+/* line 145, ../sass/eshop-style.scss */
 .image {
   background-size: cover;
   width: 800px;
   height: 600px; }
 
 /* titles */
-/* line 152, ../sass/eshop-style.scss */
+/* line 156, ../sass/eshop-style.scss */
 h2 {
   font-size: 2em;
   font-family: 'Montserrat', cursive;
@@ -127,7 +131,7 @@ h2 {
 /*
 * === NAVBAR ===
 */
-/* line 168, ../sass/eshop-style.scss */
+/* line 172, ../sass/eshop-style.scss */
 .navbar {
   position: fixed;
   top: 0p;
@@ -136,44 +140,43 @@ h2 {
   justify-content: center;
   background-color: transparent;
   width: 100vw;
-  height: 100px;
-  padding-top: 20px;
+  height: 50px;
   transition: all 0.2s ease; }
-  /* line 183, ../sass/eshop-style.scss */
+  /* line 187, ../sass/eshop-style.scss */
   .navbar ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden; }
-  /* line 191, ../sass/eshop-style.scss */
+  /* line 195, ../sass/eshop-style.scss */
   .navbar li {
     float: left; }
-  /* line 195, ../sass/eshop-style.scss */
+  /* line 199, ../sass/eshop-style.scss */
   .navbar li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; }
-  /* line 206, ../sass/eshop-style.scss */
+  /* line 210, ../sass/eshop-style.scss */
   .navbar ul li:last-child {
     color: pink; }
 
 /*
 * === slideshow ===
 */
-/* line 220, ../sass/eshop-style.scss */
+/* line 224, ../sass/eshop-style.scss */
 img {
   width: 100vw;
   height: auto;
   transition: .3s ease-in-out; }
 
-/* line 227, ../sass/eshop-style.scss */
+/* line 231, ../sass/eshop-style.scss */
 #box1, #box2, #box3, #box4, #box5 {
   width: 100vw;
   height: 75vh;
   float: left; }
 
-/* line 234, ../sass/eshop-style.scss */
+/* line 238, ../sass/eshop-style.scss */
 #slideshow-container {
   width: 100%;
   position: relative;
@@ -181,7 +184,7 @@ img {
   margin: auto;
   transition: all 1s ease; }
 
-/* line 243, ../sass/eshop-style.scss */
+/* line 247, ../sass/eshop-style.scss */
 #slideshow {
   width: 1000%;
   -webkit-animation: slideshow 20s infinite;
@@ -239,7 +242,7 @@ img {
 /*
 * === MASONRY===
 */
-/* line 295, ../sass/eshop-style.scss */
+/* line 299, ../sass/eshop-style.scss */
 .masonry {
   /* Masonry container */
   -webkit-column-count: 4;
@@ -255,7 +258,7 @@ img {
   column-gap: 1.5em;
   font-size: .85em; }
 
-/* line 309, ../sass/eshop-style.scss */
+/* line 313, ../sass/eshop-style.scss */
 .item {
   display: inline-block;
   background: #fff;
@@ -268,24 +271,24 @@ img {
   -webkit-box-sizing: border-box;
   box-shadow: 2px 2px 4px 0 #ccc; }
 
-/* line 321, ../sass/eshop-style.scss */
+/* line 325, ../sass/eshop-style.scss */
 .item img {
   max-width: 100%; }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 326, ../sass/eshop-style.scss */
+  /* line 330, ../sass/eshop-style.scss */
   .masonry {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1; } }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-  /* line 333, ../sass/eshop-style.scss */
+  /* line 337, ../sass/eshop-style.scss */
   .masonry {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; } }
 @media only screen and (min-width: 1201px) {
-  /* line 340, ../sass/eshop-style.scss */
+  /* line 344, ../sass/eshop-style.scss */
   .masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -293,7 +296,7 @@ img {
 /*
 * ===  FORMULAIRE ===
 */
-/* line 363, ../sass/eshop-style.scss */
+/* line 367, ../sass/eshop-style.scss */
 .signup__form {
   width: 100%;
   display: flex;
@@ -302,11 +305,12 @@ img {
   margin: 10px auto;
   justify-content: center;
   width: 30%; }
-  /* line 375, ../sass/eshop-style.scss */
+  /* line 379, ../sass/eshop-style.scss */
   .signup__form input {
     width: auto;
     padding: 12px 20px;
-    margin: 8px 0; }
+    margin: 8px 0;
+    box-sizing: border-box; }
 
 /*
 * === MAIN ===
@@ -314,55 +318,48 @@ img {
 /*
 * === PANIER ===
 */
-/* line 396, ../sass/eshop-style.scss */
+/* line 400, ../sass/eshop-style.scss */
 .navbar3 {
-  position: absolute;
   top: 0p;
   z-index: 1000;
   display: flex;
   justify-content: center;
   background-color: #f3c741;
   width: 100vw;
-  height: 100px;
-  transition: all 0.2s ease; }
-  /* line 408, ../sass/eshop-style.scss */
+  height: 50px; }
+  /* line 412, ../sass/eshop-style.scss */
   .navbar3 ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden; }
-  /* line 416, ../sass/eshop-style.scss */
+  /* line 420, ../sass/eshop-style.scss */
   .navbar3 li {
     float: left; }
-  /* line 420, ../sass/eshop-style.scss */
+  /* line 424, ../sass/eshop-style.scss */
   .navbar3 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; }
 
-/* line 432, ../sass/eshop-style.scss */
+/* line 436, ../sass/eshop-style.scss */
 .navbar4 {
-  position: absolute;
-  top: 0p;
-  z-index: 1000;
   display: flex;
   justify-content: center;
   background-color: #f3c741;
   width: 100vw;
-  height: 100px;
-  padding: 20px;
-  transition: all 0.2s ease; }
-  /* line 447, ../sass/eshop-style.scss */
+  height: 50px; }
+  /* line 445, ../sass/eshop-style.scss */
   .navbar4 ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden; }
-  /* line 455, ../sass/eshop-style.scss */
+  /* line 453, ../sass/eshop-style.scss */
   .navbar4 li {
     float: left; }
-  /* line 459, ../sass/eshop-style.scss */
+  /* line 457, ../sass/eshop-style.scss */
   .navbar4 li a {
     display: block;
     color: white;
@@ -371,115 +368,233 @@ img {
     text-decoration: none;
     color: black; }
 
-/* line 472, ../sass/eshop-style.scss */
-.main {
-  padding-top: 50px; }
-
-/* line 478, ../sass/eshop-style.scss */
+/* line 470, ../sass/eshop-style.scss */
 h2, p {
   text-align: center; }
 
-/* line 482, ../sass/eshop-style.scss */
+/* line 474, ../sass/eshop-style.scss */
 .total {
   color: blue; }
 
 /*
 * === FORM ===
 */
-/* line 490, ../sass/eshop-style.scss */
+/* line 482, ../sass/eshop-style.scss */
 form {
   margin: 20px; }
 
-/* line 494, ../sass/eshop-style.scss */
+/* line 486, ../sass/eshop-style.scss */
 .imgproduct {
   height: 50px;
   width: auto; }
 
-/* line 499, ../sass/eshop-style.scss */
+/* line 491, ../sass/eshop-style.scss */
 .icon {
   height: 20px;
   width: auto; }
 
-/* line 504, ../sass/eshop-style.scss */
+/* line 496, ../sass/eshop-style.scss */
 table, th, td {
   border: 1px solid black; }
 
-/* line 508, ../sass/eshop-style.scss */
+/* line 500, ../sass/eshop-style.scss */
 th {
   text-align: center;
   vertical-align: middle; }
 
-/* line 513, ../sass/eshop-style.scss */
+/* line 505, ../sass/eshop-style.scss */
 td {
   height: 100px;
   vertical-align: middle;
   text-align: center; }
 
-/* line 519, ../sass/eshop-style.scss */
+/* line 511, ../sass/eshop-style.scss */
 tr:nth-child(even) {
   background-color: #f2f2f2; }
 
-/* line 521, ../sass/eshop-style.scss */
+/* line 513, ../sass/eshop-style.scss */
 tr:hover {
   background-color: #ddd; }
 
-/* line 523, ../sass/eshop-style.scss */
+/* line 515, ../sass/eshop-style.scss */
 .rowtotal p {
   font-weight: bold;
   margin-top: 40px; }
 
+/*
+* === INSCRIPTION ===
+*/
+/* line 529, ../sass/eshop-style.scss */
+.tabconnexion table, .tabconnexion th, .tabconnexion td {
+  border: 1px solid orange; }
+/* line 533, ../sass/eshop-style.scss */
+.tabconnexion th {
+  text-align: center;
+  vertical-align: middle; }
+/* line 538, ../sass/eshop-style.scss */
+.tabconnexion td {
+  height: 5vh;
+  width: 20vw;
+  vertical-align: middle;
+  text-align: center; }
+/* line 545, ../sass/eshop-style.scss */
+.tabconnexion input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
+
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Force table to not be like tables anymore */
-  /* line 534, ../sass/eshop-style.scss */
-  table, thead, tbody, th, td, tr {
-    display: block; }
+  /* line 561, ../sass/eshop-style.scss */
+  .tabconnexion {
+    /* Hide table headers (but not display: none;, for accessibility) */ }
+    /* line 573, ../sass/eshop-style.scss */
+    .tabconnexion tr {
+      border: 1px solid #ccc; }
+    /* line 575, ../sass/eshop-style.scss */
+    .tabconnexion td {
+      /* Behave  like a "row" */
+      height: 5vh;
+      width: 20vw;
+      vertical-align: middle;
+      text-align: center; } }
+/*
+* === TEST FORMULAIRE ===
+*/
+/* line 590, ../sass/eshop-style.scss */
+* {
+  box-sizing: border-box; }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
-  /* line 539, ../sass/eshop-style.scss */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
+/* line 594, ../sass/eshop-style.scss */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
 
-  /* line 545, ../sass/eshop-style.scss */
-  tr {
-    border: 1px solid #ccc; }
+/* line 602, ../sass/eshop-style.scss */
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
 
-  /* line 547, ../sass/eshop-style.scss */
-  td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%; }
+/* line 610, ../sass/eshop-style.scss */
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; }
 
-  /* line 555, ../sass/eshop-style.scss */
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap; }
+/* line 618, ../sass/eshop-style.scss */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block; }
 
-  /*
-  * === CONNEXION ===
-  */
-  /* line 570, ../sass/eshop-style.scss */
-  .tabconnexion table, th, td {
-    border: 1px solid pink;
-    width: 10px; }
+/* line 623, ../sass/eshop-style.scss */
+input[type=submit] {
+  background-color: lightgrey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
 
-  /* line 575, ../sass/eshop-style.scss */
-  .tabconnexion th {
-    text-align: center;
-    vertical-align: middle; }
+/* line 633, ../sass/eshop-style.scss */
+input[type=submit]:hover {
+  background-color: #f3c741; }
 
-  /* line 580, ../sass/eshop-style.scss */
-  .tabconnexion td {
-    height: 50vh;
-    width: 50vw;
-    vertical-align: middle;
-    text-align: center; } }
+/* line 637, ../sass/eshop-style.scss */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+/* line 643, ../sass/eshop-style.scss */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px; }
+
+/* line 649, ../sass/eshop-style.scss */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px; }
+
+/* Clear floats after the columns */
+/* line 656, ../sass/eshop-style.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  /* line 664, ../sass/eshop-style.scss */
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; } }
+/*
+* === FOCUS PRODUITS ===
+*/
+/* line 676, ../sass/eshop-style.scss */
+.container-projets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  justify-content: space-around; }
+
+/* line 687, ../sass/eshop-style.scss */
+.container-projets h2 {
+  margin: 0 auto;
+  font-weight: bold; }
+
+/* line 694, ../sass/eshop-style.scss */
+.carousel {
+  background-color: white;
+  border-color: black;
+  width: 60vw;
+  height: 50vw;
+  margin: 10px;
+  text-align: center; }
+
+/* line 704, ../sass/eshop-style.scss */
+.carousel img {
+  width: 50vw;
+  height: auto; }
+
+/* line 710, ../sass/eshop-style.scss */
+.desc {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  width: 40vw;
+  height: 50vw;
+  margin: 10px;
+  padding: 20px; }
+
+/* line 722, ../sass/eshop-style.scss */
+.desc p {
+  background-color: white;
+  height: 50 px;
+  width: auto;
+  margin-top: 30px; }
+
+/* line 730, ../sass/eshop-style.scss */
+.next {
+  display: flex;
+  text-align: center;
+  padding-top: 80px;
+  flex-direction: row;
+  justify-content: space-between; }

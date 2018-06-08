@@ -53,13 +53,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="projets/?id=4">
-  <img class="image" src="../img/gru01.jpg" alt="Alt text" />
+ <a href="projets/?id=7">
+  <img class="image" src="../img/affiche01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Gru</div>
+   <div class="text">Affiche</div>
   </div>
  </a>
 </div>
@@ -95,13 +95,13 @@ ob_start();
 
       <div class="masonry-item">
 <div class="overlay-image">
- <a href="projets/?id=7">
-  <img class="image" src="../img/affiche03.jpg" alt="Alt text" />
+ <a href="projets/?id=4">
+  <img class="image" src="../img/gru01.jpg" alt="Alt text" />
   <div class="normal">
    <div class="text"></div>
   </div>
   <div class="hover">
-   <div class="text">Affiche</div>
+   <div class="text">Gru</div>
   </div>
  </a>
 </div>

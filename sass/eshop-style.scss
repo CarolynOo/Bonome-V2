@@ -108,10 +108,14 @@ a{
   text-decoration: none;
   padding-right: 30px;
   color:#000;
+      font-weight: bold;
+    font-size: 1.2em;
 }
  
 a:hover { 
   text-shadow: 0px 0px 9px #777;
+  font-weight: bold;
+  color:white;
    }
 
 
@@ -174,8 +178,8 @@ h2{
 	justify-content: center;
 	background-color: transparent;
 	width: 100vw;
-	height:100px;
-	padding-top: 20px;
+	height:50px;
+
 	transition: all 0.2s ease;
 
 	
@@ -377,7 +381,7 @@ img {
 			width: auto;
 			padding: 12px 20px;
 			margin: 8px 0;
-			//box-sizing: border-box;
+			box-sizing: border-box;
 
 		}
 
@@ -395,15 +399,15 @@ img {
 
 .navbar3{
 
-  position: absolute;
+ 
   top : 0p;
   z-index: 1000;
   display:flex;
   justify-content: center;
   background-color: #f3c741;
   width: 100vw;
-  height:100px;
-  transition: all 0.2s ease;
+  height:50px;
+
 
   ul {
     list-style-type: none;
@@ -431,18 +435,12 @@ img {
 
 .navbar4{
 
-  position: absolute;
-  top : 0p;
-  z-index: 1000;
+  
   display:flex;
   justify-content: center;
   background-color: #f3c741;
   width: 100vw;
-  height:100px;
-  padding: 20px;
-  transition: all 0.2s ease;
-
-  
+  height:50px;
 
   ul {
     list-style-type: none;
@@ -468,12 +466,6 @@ img {
  
 }
 
-
-.main{
-	padding-top: 50px;
-
-
-}
 
 h2, p{
   text-align: center;
@@ -526,63 +518,220 @@ tr:hover {background-color: #ddd;}
   margin-top:40px;
 }
 
+  
+
+/*
+* === INSCRIPTION ===
+*/
+
+
+.tabconnexion{
+table, th, td {
+   border: 1px solid orange;
+}
+
+th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    height: 5vh;
+    width: 20vw;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input{
+
+     width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+}
+
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
   /* Force table to not be like tables anymore */
+ .tabconnexion{ 
   table, thead, tbody, th, td, tr { 
-    display: block; 
+    
   }
+
   
   /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
+  // thead tr { 
+  //   position: absolute;
+   
+  // }
   
   tr { border: 1px solid #ccc; }
   
   td { 
     /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee; 
-    position: relative;
-    padding-left: 50%; 
+  height: 5vh;
+    width: 20vw;
+    vertical-align: middle;
+    text-align: center;
   }
   
-  td:before { 
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%; 
-    padding-right: 10px; 
-    white-space: nowrap;
-  }
+  
+}}
 
 /*
-* === CONNEXION ===
-*/ 
+* === TEST FORMULAIRE ===
+*/
 
-.tabconnexion table, th, td {
-   border: 1px solid pink;
-   width: 10px;
+* {
+    box-sizing: border-box;
 }
 
-.tabconnexion th {
-    text-align: center;
-    vertical-align: middle;
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-.tabconnexion td {
-    height: 50vh;
-    width: 50vw;
-    vertical-align: middle;
-    text-align: center;
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
+
+input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: lightgrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #f3c741;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 
+/*
+* === FOCUS PRODUITS ===
+*/
+ 
+
+.container-projets{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ background-color: white; 
+ height: 100vh;
+
+ justify-content: space-around;
+
+}
+
+.container-projets h2{
+
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+
+.carousel{
+  background-color: white; 
+  border-color: black;
+  width: 60vw;
+  height: 50vw;
+  margin: 10px;
+  text-align: center;
+
+}
+
+.carousel img{
+
+  width: 50vw;
+  height: auto;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+  display: flex;
+  justify-content: flex-start;
+  width: 40vw;
+  height: 50vw;
+  margin: 10px;
+  padding: 20px;
+}
+
+.desc p {
+
+  background-color: white;
+  height: 50 px;
+  width: auto;
+  margin-top: 30px;
+}
+
+.next{
+  display: flex;
+  text-align: center;
+  padding-top: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
